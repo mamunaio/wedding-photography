@@ -21,7 +21,7 @@ export default function FeaturedWork() {
           <Reveal delay={0.1}>
             <Link
               href="/portfolio"
-              className="inline-flex items-center gap-2 font-italiana text-[0.7rem] uppercase tracking-[0.4em] text-graphite hover:text-ink transition-colors duration-500 border-b border-ink/20 pb-2"
+              className="inline-flex items-center gap-2 font-italiana text-[0.8125rem] uppercase tracking-[0.35em] text-graphite hover:text-ink transition-colors duration-500 border-b border-ink/20 pb-2"
             >
               View full portfolio
               <span>→</span>
@@ -83,7 +83,7 @@ export default function FeaturedWork() {
                     <p className="mt-6 body-md max-w-md">{entry.excerpt}</p>
                     <Link
                       href={`/portfolio/${entry.slug}`}
-                      className="mt-6 inline-flex items-center gap-2 font-italiana text-[0.65rem] uppercase tracking-[0.35em] text-graphite hover:text-ink transition-colors duration-500"
+                      className="mt-6 inline-flex items-center gap-2 font-italiana text-[0.75rem] uppercase tracking-[0.3em] text-graphite hover:text-ink transition-colors duration-500"
                     >
                       Read the story
                       <span>→</span>

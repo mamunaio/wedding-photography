@@ -20,7 +20,7 @@ export default function JournalTeaser() {
           <Reveal delay={0.1}>
             <Link
               href="/journal"
-              className="inline-flex items-center gap-2 font-italiana text-[0.7rem] uppercase tracking-[0.4em] text-graphite hover:text-ink transition-colors duration-500 border-b border-ink/20 pb-2"
+              className="inline-flex items-center gap-2 font-italiana text-[0.8125rem] uppercase tracking-[0.35em] text-graphite hover:text-ink transition-colors duration-500 border-b border-ink/20 pb-2"
             >
               All entries
               <span>→</span>
@@ -48,7 +48,7 @@ export default function JournalTeaser() {
                 <p className="mt-4 body-md text-graphite/80 line-clamp-3">
                   {post.excerpt}
                 </p>
-                <p className="mt-6 font-italiana text-[0.65rem] uppercase tracking-[0.35em] text-taupe">
+                <p className="mt-6 font-italiana text-[0.75rem] uppercase tracking-[0.3em] text-taupe">
                   {post.date}
                 </p>
               </Link>

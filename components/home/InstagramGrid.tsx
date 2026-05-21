@@ -21,7 +21,7 @@ export default function InstagramGrid() {
               href="https://www.instagram.com"
               target="_blank"
               rel="noreferrer"
-              className="group inline-flex items-center gap-3 font-italiana text-[0.7rem] uppercase tracking-[0.4em] text-graphite hover:text-ink transition-colors duration-500"
+              className="group inline-flex items-center gap-3 font-italiana text-[0.8125rem] uppercase tracking-[0.35em] text-graphite hover:text-ink transition-colors duration-500"
             >
               <Instagram className="w-4 h-4" strokeWidth={1.25} />
               @aureliaandvow

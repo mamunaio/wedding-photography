@@ -58,7 +58,7 @@ export default function AboutTeaser() {
 
               <Link
                 href="/about"
-                className="mt-12 inline-flex items-center gap-3 font-italiana text-[0.7rem] uppercase tracking-[0.4em] text-graphite hover:text-ink transition-colors duration-500 border-b border-ink/20 pb-2"
+                className="mt-12 inline-flex items-center gap-3 font-italiana text-[0.8125rem] uppercase tracking-[0.35em] text-graphite hover:text-ink transition-colors duration-500 border-b border-ink/20 pb-2"
               >
                 Read the full story
                 <span>→</span>

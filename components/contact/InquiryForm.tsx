@@ -65,7 +65,7 @@ export default function InquiryForm() {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="text-center py-20"
           >
-            <p className="font-italiana text-[0.7rem] uppercase tracking-[0.4em] text-taupe mb-8">
+            <p className="font-italiana text-[0.8125rem] uppercase tracking-[0.35em] text-taupe mb-8">
               Thank you
             </p>
             <p className="font-display text-3xl md:text-5xl font-light italic leading-[1.2] text-ink max-w-[24ch] mx-auto">
@@ -154,7 +154,7 @@ export default function InquiryForm() {
               <button
                 type="submit"
                 disabled={pending}
-                className="group inline-flex items-center gap-3 font-italiana text-[0.7rem] uppercase tracking-[0.4em] bg-ink text-cream py-4 px-10 hover:bg-graphite transition-colors duration-700 ease-editorial disabled:opacity-50"
+                className="group inline-flex items-center gap-3 font-italiana text-[0.8125rem] uppercase tracking-[0.35em] bg-ink text-cream py-4 px-10 hover:bg-graphite transition-colors duration-700 ease-editorial disabled:opacity-50"
               >
                 {pending ? "Sending…" : "Send inquiry"}
                 <span className="transition-transform duration-700 ease-editorial group-hover:translate-x-1.5">
@@ -182,7 +182,7 @@ function FieldLabel({
   return (
     <label
       htmlFor={htmlFor}
-      className="block font-italiana text-[0.65rem] uppercase tracking-[0.35em] text-taupe mb-3"
+      className="block font-italiana text-[0.75rem] uppercase tracking-[0.3em] text-taupe mb-3"
     >
       {children}
     </label>

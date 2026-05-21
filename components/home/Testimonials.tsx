@@ -36,7 +36,7 @@ export default function Testimonials() {
                   <p className="font-display text-xl text-graphite">
                     {t.couple}
                   </p>
-                  <p className="font-italiana text-[0.7rem] uppercase tracking-[0.35em] text-taupe">
+                  <p className="font-italiana text-[0.8125rem] uppercase tracking-[0.3em] text-taupe">
                     {t.location} · {t.date}
                   </p>
                 </footer>
@@ -50,7 +50,7 @@ export default function Testimonials() {
             onClick={() =>
               setIndex((i) => (i - 1 + total) % total)
             }
-            className="font-italiana text-[0.7rem] uppercase tracking-[0.4em] text-graphite hover:text-ink transition-colors duration-500"
+            className="font-italiana text-[0.8125rem] uppercase tracking-[0.35em] text-graphite hover:text-ink transition-colors duration-500"
             aria-label="Previous testimonial"
           >
             ← Prev
@@ -61,7 +61,7 @@ export default function Testimonials() {
           </span>
           <button
             onClick={() => setIndex((i) => (i + 1) % total)}
-            className="font-italiana text-[0.7rem] uppercase tracking-[0.4em] text-graphite hover:text-ink transition-colors duration-500"
+            className="font-italiana text-[0.8125rem] uppercase tracking-[0.35em] text-graphite hover:text-ink transition-colors duration-500"
             aria-label="Next testimonial"
           >
             Next →

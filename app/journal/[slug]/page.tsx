@@ -51,7 +51,7 @@ export default async function JournalDetailPage({
         <div className="absolute inset-0 bg-gradient-to-b from-ink/40 via-ink/15 to-ink/80" />
         <div className="absolute inset-0 flex items-end pb-16 md:pb-24">
           <div className="container-narrow">
-            <p className="font-italiana text-[0.7rem] uppercase tracking-[0.4em] text-cream/80 mb-6">
+            <p className="font-italiana text-[0.8125rem] uppercase tracking-[0.35em] text-cream/80 mb-6">
               {post.category} · {post.readTime}
             </p>
             <h1 className="font-display font-light text-cream text-[clamp(2.5rem,6vw,5.5rem)] leading-[1.05] tracking-[-0.01em] max-w-3xl">
@@ -171,7 +171,7 @@ export default async function JournalDetailPage({
           <div className="mt-20 text-center">
             <Link
               href="/journal"
-              className="inline-flex items-center gap-3 font-italiana text-[0.7rem] uppercase tracking-[0.4em] text-graphite hover:text-ink transition-colors duration-500 border-b border-ink/20 pb-2"
+              className="inline-flex items-center gap-3 font-italiana text-[0.8125rem] uppercase tracking-[0.35em] text-graphite hover:text-ink transition-colors duration-500 border-b border-ink/20 pb-2"
             >
               All journal entries
               <span>→</span>

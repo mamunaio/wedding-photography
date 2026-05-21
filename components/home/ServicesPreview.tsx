@@ -34,11 +34,11 @@ export default function ServicesPreview() {
               )}
             >
               <div className="flex items-baseline justify-between mb-8">
-                <span className="font-italiana text-[0.7rem] uppercase tracking-[0.4em] text-brass">
+                <span className="font-italiana text-[0.8125rem] uppercase tracking-[0.35em] text-brass">
                   0{i + 1}
                 </span>
                 {service.popular && (
-                  <span className="font-italiana text-[0.6rem] uppercase tracking-[0.3em] text-brass">
+                  <span className="font-italiana text-[0.75rem] uppercase tracking-[0.25em] text-brass">
                     Most chosen
                   </span>
                 )}
@@ -68,7 +68,7 @@ export default function ServicesPreview() {
           </p>
           <Link
             href="/services"
-            className="inline-flex items-center gap-3 font-italiana text-[0.7rem] uppercase tracking-[0.4em] text-cream/80 hover:text-cream transition-colors duration-500 border-b border-cream/30 pb-2 self-start md:self-auto"
+            className="inline-flex items-center gap-3 font-italiana text-[0.8125rem] uppercase tracking-[0.35em] text-cream/80 hover:text-cream transition-colors duration-500 border-b border-cream/30 pb-2 self-start md:self-auto"
           >
             Full investment guide
             <span>→</span>

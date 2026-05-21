@@ -68,7 +68,7 @@ export default function ClientAccessPage() {
             <div className="col-span-12 md:col-span-5">
               <Reveal delay={0.2}>
                 <div className="border border-cream/15 bg-ink/40 backdrop-blur-md p-10 md:p-12">
-                  <p className="font-italiana text-[0.65rem] uppercase tracking-[0.4em] text-brass mb-8">
+                  <p className="font-italiana text-[0.75rem] uppercase tracking-[0.35em] text-brass mb-8">
                     Private gallery
                   </p>
                   <AccessForm />
@@ -180,7 +180,7 @@ export default function ClientAccessPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-3 font-italiana text-[0.7rem] uppercase tracking-[0.4em] text-graphite hover:text-ink transition-colors duration-500 border-b border-ink/20 pb-2"
+              className="inline-flex items-center gap-3 font-italiana text-[0.8125rem] uppercase tracking-[0.35em] text-graphite hover:text-ink transition-colors duration-500 border-b border-ink/20 pb-2"
             >
               Write to the studio
               <span>→</span>

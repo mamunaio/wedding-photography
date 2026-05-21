@@ -5,7 +5,7 @@ export default function PressMarquee() {
   return (
     <section className="py-20 md:py-28 bg-ink text-cream overflow-hidden">
       <div className="container-editorial">
-        <p className="font-italiana text-[0.7rem] uppercase tracking-[0.4em] text-brass text-center mb-10">
+        <p className="font-italiana text-[0.8125rem] uppercase tracking-[0.35em] text-brass text-center mb-10">
           As featured in
         </p>
       </div>

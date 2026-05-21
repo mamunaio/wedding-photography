@@ -51,10 +51,10 @@ export const PHOTOS = {
   receptionB: "photo-1530023367847-a683933f4172",
 
   // Editorial / lifestyle
-  editorialA: "photo-1532712938310-34cb3982ef74",
-  editorialB: "photo-1517245386807-bb43f82c33c4",
-  editorialC: "photo-1488116748077-eed1e1a2a8e2",
-  editorialD: "photo-1496217590455-aa63a8350eea",
+  editorialA: "photo-1519741497674-611481863552",
+  editorialB: "photo-1465495976277-4387d4b0b4c6",
+  editorialC: "photo-1519225421980-715cb0215aed",
+  editorialD: "photo-1511285560929-80b456fea0bc",
 
   // Photographer portrait (for About)
   photographer: "photo-1494790108377-be9c29b29330",

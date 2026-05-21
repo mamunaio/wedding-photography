@@ -82,19 +82,19 @@ html.lenis body {
   }
 
   .eyebrow {
-    @apply font-italiana text-[0.7rem] uppercase tracking-[0.4em] text-taupe;
+    @apply font-italiana text-[0.8125rem] uppercase tracking-[0.35em] text-taupe;
   }
 
   .label {
-    @apply font-body text-[0.7rem] uppercase tracking-[0.25em] text-graphite;
+    @apply font-body text-[0.8125rem] uppercase tracking-[0.2em] text-graphite;
   }
 
   .body-lg {
-    @apply font-body text-lg leading-[1.7] text-graphite;
+    @apply font-body text-[1.0625rem] leading-[1.7] text-graphite;
   }
 
   .body-md {
-    @apply font-body text-base leading-[1.7] text-graphite;
+    @apply font-body text-[0.9375rem] leading-[1.7] text-graphite;
   }
 
   .container-editorial {

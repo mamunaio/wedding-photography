@@ -58,7 +58,7 @@ export default function ContactPage() {
             <aside className="col-span-12 md:col-span-4 md:col-start-9">
               <Reveal delay={0.15}>
                 <div className="bg-bone p-10 md:p-12 sticky top-32">
-                  <p className="font-italiana text-[0.65rem] uppercase tracking-[0.4em] text-taupe mb-6">
+                  <p className="font-italiana text-[0.75rem] uppercase tracking-[0.35em] text-taupe mb-6">
                     The studio
                   </p>
                   <h3 className="font-display text-3xl font-light leading-tight">
@@ -161,7 +161,7 @@ export default function ContactPage() {
               <Reveal delay={0.15}>
                 {/* Cal.com embed placeholder */}
                 <div className="border border-cream/15 bg-graphite/30 backdrop-blur-sm p-10 md:p-12">
-                  <p className="font-italiana text-[0.65rem] uppercase tracking-[0.4em] text-brass mb-6">
+                  <p className="font-italiana text-[0.75rem] uppercase tracking-[0.35em] text-brass mb-6">
                     Calendar embed
                   </p>
                   <h3 className="font-display text-2xl md:text-3xl font-light leading-tight">
@@ -199,7 +199,7 @@ export default function ContactPage() {
 
                   <a
                     href="#"
-                    className="mt-10 inline-flex items-center gap-3 font-italiana text-[0.7rem] uppercase tracking-[0.4em] text-cream/80 hover:text-cream transition-colors duration-500 border-b border-cream/30 pb-2"
+                    className="mt-10 inline-flex items-center gap-3 font-italiana text-[0.8125rem] uppercase tracking-[0.35em] text-cream/80 hover:text-cream transition-colors duration-500 border-b border-cream/30 pb-2"
                   >
                     See full calendar
                     <span>→</span>
@@ -219,7 +219,7 @@ export default function ContactPage() {
               "We never feel the work of writing a wedding inquiry is wasted —
               every couple deserves the same care, whether they book us or not."
             </p>
-            <p className="mt-8 font-italiana text-[0.65rem] uppercase tracking-[0.4em] text-taupe">
+            <p className="mt-8 font-italiana text-[0.75rem] uppercase tracking-[0.35em] text-taupe">
               Margaux, the studio
             </p>
           </Reveal>

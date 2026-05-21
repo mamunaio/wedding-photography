@@ -19,7 +19,7 @@ export default function Button({
   external,
 }: ButtonProps) {
   const base =
-    "group inline-flex items-center gap-3 font-body text-[0.7rem] uppercase tracking-[0.25em] py-4 px-8 transition-all duration-700 ease-editorial";
+    "group inline-flex items-center gap-3 font-body text-[0.8125rem] uppercase tracking-[0.2em] py-4 px-8 transition-all duration-700 ease-editorial";
 
   const styles = {
     filled:

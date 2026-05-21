@@ -61,7 +61,7 @@ export default function JournalPage() {
                   <span className="link-underline">{featured.title}</span>
                 </h2>
                 <p className="mt-6 body-md max-w-md">{featured.excerpt}</p>
-                <p className="mt-8 font-italiana text-[0.65rem] uppercase tracking-[0.35em] text-taupe">
+                <p className="mt-8 font-italiana text-[0.75rem] uppercase tracking-[0.3em] text-taupe">
                   {featured.date}
                 </p>
               </Reveal>
@@ -97,7 +97,7 @@ export default function JournalPage() {
                   <p className="mt-4 body-md text-graphite/80 line-clamp-2">
                     {post.excerpt}
                   </p>
-                  <p className="mt-6 font-italiana text-[0.65rem] uppercase tracking-[0.35em] text-taupe">
+                  <p className="mt-6 font-italiana text-[0.75rem] uppercase tracking-[0.3em] text-taupe">
                     {post.date}
                   </p>
                 </Link>

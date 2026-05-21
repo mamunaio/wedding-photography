@@ -26,7 +26,7 @@ export default function SectionLabel({
       {number && (
         <span
           className={cn(
-            "font-italiana text-[0.7rem] tracking-[0.25em]",
+            "font-italiana text-[0.8125rem] tracking-[0.2em]",
             tone === "ink" ? "text-taupe" : "text-brass",
           )}
         >
@@ -41,7 +41,7 @@ export default function SectionLabel({
       />
       <span
         className={cn(
-          "font-italiana text-[0.7rem] uppercase tracking-[0.4em]",
+          "font-italiana text-[0.8125rem] uppercase tracking-[0.35em]",
           tone === "ink" ? "text-graphite" : "text-cream/70",
         )}
       >

@@ -105,13 +105,13 @@ export default function ServicesPage() {
                 )}
               >
                 {service.popular && (
-                  <span className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-ink text-cream font-italiana text-[0.6rem] uppercase tracking-[0.4em] px-5 py-2">
+                  <span className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-ink text-cream font-italiana text-[0.75rem] uppercase tracking-[0.35em] px-5 py-2">
                     Most chosen
                   </span>
                 )}
 
                 <div className="mb-10">
-                  <p className="font-italiana text-[0.7rem] uppercase tracking-[0.4em] text-taupe mb-4">
+                  <p className="font-italiana text-[0.8125rem] uppercase tracking-[0.35em] text-taupe mb-4">
                     Collection 0{i + 1}
                   </p>
                   <h3 className="font-display text-4xl md:text-5xl font-light leading-tight">

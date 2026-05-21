@@ -49,6 +49,9 @@ export default function Navigation() {
   }, [open]);
 
   const onDarkMode = startTransparent && !scrolled;
+  
+  // Check if we're on a dark section even when scrolled
+  const shouldUseDarkNavbar = startTransparent;
 
   return (
     <>
@@ -56,7 +59,9 @@ export default function Navigation() {
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-700 ease-editorial",
           scrolled
-            ? "bg-cream/85 backdrop-blur-xl border-b border-ink/5"
+            ? shouldUseDarkNavbar 
+              ? "bg-ink/90 backdrop-blur-xl border-b border-cream/10"
+              : "bg-cream/90 backdrop-blur-xl border-b border-ink/5"
             : "bg-transparent",
         )}
       >
@@ -65,7 +70,7 @@ export default function Navigation() {
             href="/"
             className={cn(
               "font-display text-xl md:text-2xl tracking-tight transition-colors duration-500",
-              onDarkMode ? "text-cream" : "text-ink",
+              shouldUseDarkNavbar ? "text-cream" : "text-ink",
             )}
           >
             <span className="font-light italic">Aurelia</span>
@@ -79,12 +84,12 @@ export default function Navigation() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  "relative font-body text-[0.7rem] uppercase tracking-[0.25em] transition-colors duration-500",
-                  onDarkMode
-                    ? "text-cream/80 hover:text-cream"
+                  "relative font-body text-[0.8125rem] uppercase tracking-[0.2em] transition-colors duration-500",
+                  shouldUseDarkNavbar
+                    ? "text-cream/85 hover:text-cream"
                     : "text-graphite hover:text-ink",
                   pathname === link.href &&
-                    (onDarkMode ? "text-cream" : "text-ink"),
+                    (shouldUseDarkNavbar ? "text-cream" : "text-ink"),
                 )}
               >
                 {link.label}
@@ -92,7 +97,7 @@ export default function Navigation() {
                   <span
                     className={cn(
                       "absolute -bottom-2 left-0 right-0 h-px",
-                      onDarkMode ? "bg-cream" : "bg-ink",
+                      shouldUseDarkNavbar ? "bg-cream" : "bg-ink",
                     )}
                   />
                 )}
@@ -103,9 +108,9 @@ export default function Navigation() {
           <Link
             href="/client-access"
             className={cn(
-              "hidden lg:inline-block font-body text-[0.7rem] uppercase tracking-[0.25em] transition-colors duration-500",
-              onDarkMode
-                ? "text-cream/80 hover:text-cream"
+              "hidden lg:inline-block font-body text-[0.8125rem] uppercase tracking-[0.2em] transition-colors duration-500",
+              shouldUseDarkNavbar
+                ? "text-cream/85 hover:text-cream"
                 : "text-graphite hover:text-ink",
             )}
           >
@@ -116,7 +121,7 @@ export default function Navigation() {
             onClick={() => setOpen(true)}
             className={cn(
               "lg:hidden p-2 -mr-2 transition-colors duration-500",
-              onDarkMode ? "text-cream" : "text-ink",
+              shouldUseDarkNavbar ? "text-cream" : "text-ink",
             )}
             aria-label="Open menu"
           >

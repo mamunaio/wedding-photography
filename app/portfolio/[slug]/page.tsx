@@ -55,7 +55,7 @@ export default async function PortfolioDetailPage({
 
         <div className="absolute inset-0 flex items-end pb-16 md:pb-24">
           <div className="container-editorial">
-            <p className="font-italiana text-[0.7rem] uppercase tracking-[0.4em] text-cream/70 mb-6">
+            <p className="font-italiana text-[0.8125rem] uppercase tracking-[0.35em] text-cream/70 mb-6">
               {entry.category} · {entry.date}
             </p>
             <h1 className="font-display font-light text-cream text-[clamp(3rem,9vw,9rem)] leading-[0.95] tracking-[-0.015em] max-w-[14ch]">
@@ -166,7 +166,7 @@ export default async function PortfolioDetailPage({
             href={`/portfolio/${prev.slug}`}
             className="group flex flex-col gap-4"
           >
-            <span className="font-italiana text-[0.65rem] uppercase tracking-[0.4em] text-brass">
+            <span className="font-italiana text-[0.75rem] uppercase tracking-[0.35em] text-brass">
               ← Previous wedding
             </span>
             <span className="font-display text-3xl md:text-4xl font-light leading-tight">
@@ -181,7 +181,7 @@ export default async function PortfolioDetailPage({
             href={`/portfolio/${next.slug}`}
             className="group flex flex-col gap-4 md:items-end md:text-right"
           >
-            <span className="font-italiana text-[0.65rem] uppercase tracking-[0.4em] text-brass">
+            <span className="font-italiana text-[0.75rem] uppercase tracking-[0.35em] text-brass">
               Next wedding →
             </span>
             <span className="font-display text-3xl md:text-4xl font-light leading-tight">

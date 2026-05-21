@@ -29,7 +29,7 @@ export default function PortfolioGrid() {
                 key={cat}
                 onClick={() => setFilter(cat)}
                 className={cn(
-                  "font-italiana text-[0.7rem] uppercase tracking-[0.4em] transition-colors duration-500 pb-1 border-b",
+                  "font-italiana text-[0.8125rem] uppercase tracking-[0.35em] transition-colors duration-500 pb-1 border-b",
                   filter === cat
                     ? "text-ink border-ink"
                     : "text-graphite/60 border-transparent hover:text-ink",
@@ -85,7 +85,7 @@ export default function PortfolioGrid() {
                       {entry.location}
                     </p>
                   </div>
-                  <span className="font-italiana text-[0.65rem] tracking-[0.3em] text-graphite/50 whitespace-nowrap">
+                  <span className="font-italiana text-[0.75rem] tracking-[0.25em] text-graphite/50 whitespace-nowrap">
                     {entry.date.split(" ").pop()}
                   </span>
                 </div>
