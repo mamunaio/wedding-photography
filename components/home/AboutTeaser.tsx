@@ -41,17 +41,17 @@ export default function AboutTeaser() {
               </div>
               <div className="mt-12 grid grid-cols-3 gap-6">
                 <div>
-                  <p className="display-md text-taupe">
+                  <p className="display-md text-purple">
                     300<span className="text-graphite">+</span>
                   </p>
                   <p className="mt-2 label">weddings</p>
                 </div>
                 <div>
-                  <p className="display-md text-taupe">34</p>
+                  <p className="display-md text-purple">34</p>
                   <p className="mt-2 label">U.S. states</p>
                 </div>
                 <div>
-                  <p className="display-md text-taupe">12</p>
+                  <p className="display-md text-purple">12</p>
                   <p className="mt-2 label">countries</p>
                 </div>
               </div>

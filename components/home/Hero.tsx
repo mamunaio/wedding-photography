@@ -41,12 +41,12 @@ export default function Hero() {
             <div className="flex items-center gap-4">
               <span className="h-px w-8 bg-cream/40" />
               <span className="font-italiana text-[0.75rem] uppercase tracking-[0.4em]">
-                Charleston · Worldwide
+                Texas · Arizona
               </span>
             </div>
             <div className="hidden md:flex items-center gap-4">
               <span className="font-italiana text-[0.75rem] uppercase tracking-[0.4em]">
-                Est. 2014
+                Family Owned
               </span>
               <span className="h-px w-8 bg-cream/40" />
             </div>
@@ -68,21 +68,21 @@ export default function Hero() {
               initial={{ width: 0 }}
               animate={{ width: "4rem" }}
               transition={{ duration: 1.2, delay: 1.4, ease: [0.22, 1, 0.36, 1] }}
-              className="h-px bg-brass mb-8 md:mb-12"
+              className="h-px bg-pink mb-8 md:mb-12"
             />
             
             <h1 className="font-display font-light text-cream text-[clamp(3.5rem,11vw,12rem)] leading-[0.88] tracking-[-0.025em]">
-              Heirloom
+              Celebrate
               <br />
-              <span className="italic font-light text-cream/95">wedding</span>
+              <span className="italic font-light text-cream/95">Like You</span>
               <br />
               <span className="relative inline-block">
-                photography
+                Mean It
                 <motion.span
                   initial={{ opacity: 0, scale: 0 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.6, delay: 1.8, ease: [0.22, 1, 0.36, 1] }}
-                  className="text-brass"
+                  className="text-pink"
                 >
                   .
                 </motion.span>
@@ -96,7 +96,7 @@ export default function Hero() {
               transition={{ duration: 1, delay: 1.6, ease: [0.22, 1, 0.36, 1] }}
               className="mt-8 md:mt-12 font-body text-[1.0625rem] md:text-xl text-cream/90 leading-[1.8] max-w-2xl"
             >
-              Quiet, editorial weddings — told with restraint, romance, and reverence.
+              Award-winning photography, videography, DJ services & coordination — with unlimited time coverage.
             </motion.p>
           </motion.div>
         </div>
@@ -115,8 +115,8 @@ export default function Hero() {
             <div className="flex items-start gap-6 max-w-md">
               <span className="h-px w-12 bg-cream/30 mt-3 hidden md:block" />
               <p className="font-body text-[0.9375rem] md:text-base text-cream/75 leading-[1.7] italic">
-                For couples who want their day{" "}
-                <span className="font-display not-italic text-cream">remembered</span>, not performed.
+                From first look to last dance —{" "}
+                <span className="font-display not-italic text-cream">unlimited time</span>, transparent pricing.
               </p>
             </div>
 
@@ -126,7 +126,7 @@ export default function Hero() {
                 href="/portfolio"
                 className="group relative inline-flex items-center gap-4 font-italiana text-[0.8125rem] uppercase tracking-[0.38em] text-cream pb-3 overflow-hidden"
               >
-                <span className="relative z-10">View the portfolio</span>
+                <span className="relative z-10">View Our Work</span>
                 <motion.span
                   className="relative z-10 transition-transform duration-700 ease-editorial group-hover:translate-x-2"
                   whileHover={{ x: 4 }}
@@ -136,7 +136,7 @@ export default function Hero() {
                 <span className="absolute bottom-0 left-0 right-0 h-px bg-cream/40 group-hover:bg-cream transition-colors duration-500" />
               </Link>
               <span className="font-italiana text-[0.6875rem] uppercase tracking-[0.35em] text-cream/50">
-                15 weddings · 2026
+                5 Cities · Full Service
               </span>
             </div>
           </div>

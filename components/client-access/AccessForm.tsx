@@ -21,7 +21,7 @@ export default function AccessForm() {
     <form onSubmit={handleSubmit} className="space-y-6">
       <div className="relative">
         <Lock
-          className="absolute left-0 top-1/2 -translate-y-1/2 w-4 h-4 text-taupe"
+          className="absolute left-0 top-1/2 -translate-y-1/2 w-4 h-4 text-purple"
           strokeWidth={1.25}
         />
         <input
@@ -50,7 +50,7 @@ export default function AccessForm() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -5 }}
             transition={{ duration: 0.4 }}
-            className="text-sm font-italiana tracking-[0.2em] uppercase text-brass"
+            className="text-sm font-italiana tracking-[0.2em] uppercase text-pink"
           >
             In production, this redirects to your Pixieset gallery.
           </motion.p>

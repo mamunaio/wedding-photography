@@ -88,7 +88,7 @@ export default async function JournalDetailPage({
                 return (
                   <Reveal key={i}>
                     <blockquote className="my-12 md:my-16 py-10 md:py-12 border-y border-ink/10 text-center">
-                      <p className="font-display text-2xl md:text-4xl font-light italic leading-[1.3] text-taupe max-w-3xl mx-auto">
+                      <p className="font-display text-2xl md:text-4xl font-light italic leading-[1.3] text-purple max-w-3xl mx-auto">
                         &ldquo;{block.content}&rdquo;
                       </p>
                     </blockquote>
@@ -112,7 +112,7 @@ export default async function JournalDetailPage({
                   <p
                     className={
                       i === 0 || post.body[i - 1]?.type === "h2"
-                        ? "body-lg first-of-type:first-letter:font-display first-of-type:first-letter:text-7xl first-of-type:first-letter:font-light first-of-type:first-letter:float-left first-of-type:first-letter:leading-[0.85] first-of-type:first-letter:mr-3 first-of-type:first-letter:mt-1 first-of-type:first-letter:text-taupe"
+                        ? "body-lg first-of-type:first-letter:font-display first-of-type:first-letter:text-7xl first-of-type:first-letter:font-light first-of-type:first-letter:float-left first-of-type:first-letter:leading-[0.85] first-of-type:first-letter:mr-3 first-of-type:first-letter:mt-1 first-of-type:first-letter:text-purple"
                         : "body-lg"
                     }
                   >
@@ -127,7 +127,7 @@ export default async function JournalDetailPage({
           <Reveal>
             <div className="mt-20 pt-12 border-t border-ink/10 flex items-center gap-4">
               <div className="h-px flex-1 bg-ink/15" />
-              <p className="font-italiana text-xs tracking-[0.4em] uppercase text-taupe">
+              <p className="font-italiana text-xs tracking-[0.4em] uppercase text-purple">
                 M.H. for Aurelia & Vow
               </p>
               <div className="h-px flex-1 bg-ink/15" />
@@ -157,7 +157,7 @@ export default async function JournalDetailPage({
                   <p className="eyebrow mb-3">
                     {post.category} · {post.readTime}
                   </p>
-                  <h3 className="font-display text-2xl md:text-3xl font-light leading-tight group-hover:text-taupe transition-colors duration-500">
+                  <h3 className="font-display text-2xl md:text-3xl font-light leading-tight group-hover:text-purple transition-colors duration-500">
                     {post.title}
                   </h3>
                   <p className="mt-4 body-md text-graphite/80 line-clamp-2">

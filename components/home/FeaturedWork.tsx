@@ -77,7 +77,7 @@ export default function FeaturedWork() {
                         {entry.couple}
                       </Link>
                     </h3>
-                    <p className="mt-3 font-italiana text-sm tracking-[0.2em] uppercase text-taupe">
+                    <p className="mt-3 font-italiana text-sm tracking-[0.2em] uppercase text-purple">
                       {entry.location}
                     </p>
                     <p className="mt-6 body-md max-w-md">{entry.excerpt}</p>

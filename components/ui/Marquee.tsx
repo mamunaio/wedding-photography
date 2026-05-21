@@ -30,7 +30,7 @@ export default function Marquee({
             className="inline-flex items-center gap-8 md:gap-12 px-4 md:px-6 font-display text-2xl md:text-4xl font-light italic"
           >
             {item}
-            <span className="text-taupe not-italic text-base md:text-lg opacity-40">{separator}</span>
+            <span className="text-purple not-italic text-base md:text-lg opacity-40">{separator}</span>
           </span>
         ))}
       </div>

@@ -34,11 +34,11 @@ export default function ServicesPreview() {
               )}
             >
               <div className="flex items-baseline justify-between mb-8">
-                <span className="font-italiana text-[0.8125rem] uppercase tracking-[0.35em] text-brass">
+                <span className="font-italiana text-[0.8125rem] uppercase tracking-[0.35em] text-pink">
                   0{i + 1}
                 </span>
                 {service.popular && (
-                  <span className="font-italiana text-[0.75rem] uppercase tracking-[0.25em] text-brass">
+                  <span className="font-italiana text-[0.75rem] uppercase tracking-[0.25em] text-pink">
                     Most chosen
                   </span>
                 )}

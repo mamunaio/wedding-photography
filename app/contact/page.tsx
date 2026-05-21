@@ -58,7 +58,7 @@ export default function ContactPage() {
             <aside className="col-span-12 md:col-span-4 md:col-start-9">
               <Reveal delay={0.15}>
                 <div className="bg-bone p-10 md:p-12 sticky top-32">
-                  <p className="font-italiana text-[0.75rem] uppercase tracking-[0.35em] text-taupe mb-6">
+                  <p className="font-italiana text-[0.75rem] uppercase tracking-[0.35em] text-purple mb-6">
                     The studio
                   </p>
                   <h3 className="font-display text-3xl font-light leading-tight">
@@ -71,14 +71,14 @@ export default function ContactPage() {
                   <ul className="mt-10 space-y-6 text-sm">
                     <li className="flex gap-4">
                       <Mail
-                        className="w-4 h-4 mt-1 text-taupe flex-shrink-0"
+                        className="w-4 h-4 mt-1 text-purple flex-shrink-0"
                         strokeWidth={1.25}
                       />
                       <div>
                         <p className="label mb-1 text-graphite/60">Email</p>
                         <a
                           href={`mailto:${site.email}`}
-                          className="font-display text-base hover:text-taupe transition-colors duration-300"
+                          className="font-display text-base hover:text-purple transition-colors duration-300"
                         >
                           {site.email}
                         </a>
@@ -86,7 +86,7 @@ export default function ContactPage() {
                     </li>
                     <li className="flex gap-4">
                       <Phone
-                        className="w-4 h-4 mt-1 text-taupe flex-shrink-0"
+                        className="w-4 h-4 mt-1 text-purple flex-shrink-0"
                         strokeWidth={1.25}
                       />
                       <div>
@@ -96,7 +96,7 @@ export default function ContactPage() {
                     </li>
                     <li className="flex gap-4">
                       <MapPin
-                        className="w-4 h-4 mt-1 text-taupe flex-shrink-0"
+                        className="w-4 h-4 mt-1 text-purple flex-shrink-0"
                         strokeWidth={1.25}
                       />
                       <div>
@@ -111,7 +111,7 @@ export default function ContactPage() {
                     </li>
                     <li className="flex gap-4">
                       <Calendar
-                        className="w-4 h-4 mt-1 text-taupe flex-shrink-0"
+                        className="w-4 h-4 mt-1 text-purple flex-shrink-0"
                         strokeWidth={1.25}
                       />
                       <div>
@@ -161,7 +161,7 @@ export default function ContactPage() {
               <Reveal delay={0.15}>
                 {/* Cal.com embed placeholder */}
                 <div className="border border-cream/15 bg-graphite/30 backdrop-blur-sm p-10 md:p-12">
-                  <p className="font-italiana text-[0.75rem] uppercase tracking-[0.35em] text-brass mb-6">
+                  <p className="font-italiana text-[0.75rem] uppercase tracking-[0.35em] text-pink mb-6">
                     Calendar embed
                   </p>
                   <h3 className="font-display text-2xl md:text-3xl font-light leading-tight">
@@ -219,7 +219,7 @@ export default function ContactPage() {
               "We never feel the work of writing a wedding inquiry is wasted —
               every couple deserves the same care, whether they book us or not."
             </p>
-            <p className="mt-8 font-italiana text-[0.75rem] uppercase tracking-[0.35em] text-taupe">
+            <p className="mt-8 font-italiana text-[0.75rem] uppercase tracking-[0.35em] text-purple">
               Margaux, the studio
             </p>
           </Reveal>

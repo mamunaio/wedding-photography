@@ -3,12 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --color-cream: #f5f1ec;
-  --color-bone: #ede6dc;
-  --color-ink: #1c1b17;
-  --color-graphite: #3a3833;
-  --color-taupe: #8b6f47;
-  --color-brass: #a88a5c;
+  --color-cream: #faf8f5;
+  --color-bone: #f5f0eb;
+  --color-ink: #1a1a1a;
+  --color-graphite: #4a4a4a;
+  --color-purple: #7c3aed;
+  --color-pink: #ec4899;
+  --color-lavender: #a78bfa;
+  --color-rose: #f472b6;
   --color-stone: #a39b8b;
   --color-sage: #8a8b7a;
 }
@@ -82,7 +84,7 @@ html.lenis body {
   }
 
   .eyebrow {
-    @apply font-body text-[0.75rem] uppercase tracking-[0.25em] text-taupe font-semibold;
+    @apply font-body text-[0.75rem] uppercase tracking-[0.25em] text-purple font-semibold;
   }
 
   .label {

@@ -12,7 +12,7 @@ export default function Footer() {
             href="/contact"
             className="group block w-full border-b border-cream/15 pb-12 md:pb-16"
           >
-            <span className="eyebrow text-brass mb-6 block">
+            <span className="eyebrow text-pink mb-6 block">
               Begin a conversation
             </span>
             <h2 className="display-lg text-cream max-w-4xl">
@@ -114,12 +114,22 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href={site.social.vimeo}
+                    href={site.social.youtube}
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-cream"
                   >
-                    Vimeo
+                    YouTube
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href={site.social.tiktok}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-cream"
+                  >
+                    TikTok
                   </a>
                 </li>
               </ul>

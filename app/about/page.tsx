@@ -171,7 +171,7 @@ export default function AboutPage() {
             {principles.map((p, i) => (
               <Reveal key={p.n} delay={i * 0.08}>
                 <div className="flex gap-8">
-                  <span className="font-italiana text-xs tracking-[0.4em] text-brass pt-2">
+                  <span className="font-italiana text-xs tracking-[0.4em] text-pink pt-2">
                     {p.n}
                   </span>
                   <div className="flex-1">
@@ -205,7 +205,7 @@ export default function AboutPage() {
               <Reveal key={t.year} delay={i * 0.05}>
                 <div className="grid grid-cols-12 gap-6 py-10 border-t border-ink/10 last:border-b">
                   <div className="col-span-12 md:col-span-3">
-                    <p className="font-display text-3xl md:text-4xl font-light text-taupe">
+                    <p className="font-display text-3xl md:text-4xl font-light text-purple">
                       {t.year}
                     </p>
                   </div>
@@ -261,7 +261,7 @@ export default function AboutPage() {
                       <span className="font-display text-base md:text-lg">
                         {a.label}
                       </span>
-                      <span className="font-italiana text-xs tracking-[0.3em] text-taupe whitespace-nowrap">
+                      <span className="font-italiana text-xs tracking-[0.3em] text-purple whitespace-nowrap">
                         {a.year}
                       </span>
                     </li>

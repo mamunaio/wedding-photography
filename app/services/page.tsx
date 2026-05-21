@@ -59,7 +59,7 @@ export default function ServicesPage() {
           <>
             Three collections,{" "}
             <em className="italic">made to be passed down</em>
-            <span className="text-brass">.</span>
+            <span className="text-pink">.</span>
           </>
         }
         subtitle="Each collection is built around a different shape of day — from a quiet half-day ceremony to a four-day destination celebration."
@@ -77,19 +77,19 @@ export default function ServicesPage() {
         <div className="container-narrow text-center">
           <Reveal>
             <div className="flex items-center justify-center gap-4 mb-8">
-              <div className="h-px w-12 bg-brass/40" />
+              <div className="h-px w-12 bg-pink/40" />
               <SectionLabel
                 number="01"
                 label="A note on investment"
                 align="center"
               />
-              <div className="h-px w-12 bg-brass/40" />
+              <div className="h-px w-12 bg-pink/40" />
             </div>
             <p className="mt-12 font-display text-2xl md:text-4xl font-light leading-[1.3] text-ink max-w-[28ch] mx-auto">
               We accept fifteen weddings a year. Our collections begin at{" "}
-              <span className="text-brass font-normal">$5,400</span>. The average
+              <span className="text-pink font-normal">$5,400</span>. The average
               investment with our studio is{" "}
-              <span className="text-brass font-normal">$11,200</span>.
+              <span className="text-pink font-normal">$11,200</span>.
             </p>
             <p className="mt-10 body-lg max-w-xl mx-auto text-graphite/80">
               We believe in pricing transparency. The numbers below are exactly
@@ -111,8 +111,8 @@ export default function ServicesPage() {
                 className={cn(
                   "relative bg-cream rounded-sm overflow-hidden flex flex-col transition-all duration-700",
                   service.popular
-                    ? "lg:scale-[1.06] shadow-2xl shadow-ink/10 border-2 border-brass/20"
-                    : "border border-ink/10 hover:border-brass/30 hover:shadow-xl hover:shadow-ink/5",
+                    ? "lg:scale-[1.06] shadow-2xl shadow-ink/10 border-2 border-pink/20"
+                    : "border border-ink/10 hover:border-pink/30 hover:shadow-xl hover:shadow-ink/5",
                 )}
               >
                 {service.popular && (
@@ -121,14 +121,14 @@ export default function ServicesPage() {
 
                 <div className="p-10 md:p-12">
                   {service.popular && (
-                    <div className="inline-flex items-center gap-2 bg-brass/10 text-brass font-italiana text-[0.6875rem] uppercase tracking-[0.35em] px-4 py-2 mb-6 rounded-full">
+                    <div className="inline-flex items-center gap-2 bg-pink/10 text-pink font-italiana text-[0.6875rem] uppercase tracking-[0.35em] px-4 py-2 mb-6 rounded-full">
                       <Check className="w-3 h-3" strokeWidth={2.5} />
                       Most chosen
                     </div>
                   )}
 
                   <div className="mb-8">
-                    <p className="font-italiana text-[0.75rem] uppercase tracking-[0.35em] text-brass mb-4">
+                    <p className="font-italiana text-[0.75rem] uppercase tracking-[0.35em] text-pink mb-4">
                       Collection 0{i + 1}
                     </p>
                     <h3 className="font-display text-[2.5rem] md:text-5xl font-light leading-[1.1] text-ink mb-2">
@@ -144,7 +144,7 @@ export default function ServicesPage() {
                   <div className="space-y-6 mb-8">
                     <div>
                       <p className="label mb-4 text-graphite/70 flex items-center gap-2">
-                        <span className="w-4 h-px bg-brass/40" />
+                        <span className="w-4 h-px bg-pink/40" />
                         Includes
                       </p>
                       <ul className="space-y-3">
@@ -153,7 +153,7 @@ export default function ServicesPage() {
                             key={j}
                             className="flex gap-3 text-sm leading-relaxed text-graphite/90"
                           >
-                            <Check className="w-4 h-4 text-brass mt-0.5 flex-shrink-0" strokeWidth={2} />
+                            <Check className="w-4 h-4 text-pink mt-0.5 flex-shrink-0" strokeWidth={2} />
                             <span>{inc}</span>
                           </li>
                         ))}
@@ -217,13 +217,13 @@ export default function ServicesPage() {
         <div className="container-editorial relative">
           <Reveal>
             <div className="flex items-center gap-4 mb-6">
-              <div className="h-px w-12 bg-brass/60" />
+              <div className="h-px w-12 bg-pink/60" />
               <SectionLabel number="02" label="The process" tone="cream" />
             </div>
             <h2 className="mt-6 display-lg max-w-[16ch] text-cream">
               From inquiry to{" "}
               <em className="italic">heirloom album</em>
-              <span className="text-brass">.</span>
+              <span className="text-pink">.</span>
             </h2>
             <p className="mt-8 body-lg text-cream/70 max-w-xl">
               Six steps. Sixteen months on average. Done quietly and with care.
@@ -235,10 +235,10 @@ export default function ServicesPage() {
               <Reveal key={p.n} delay={i * 0.08}>
                 <div className="relative">
                   {/* Decorative corner */}
-                  <div className="absolute -top-4 -left-4 w-8 h-8 border-l border-t border-brass/30" />
+                  <div className="absolute -top-4 -left-4 w-8 h-8 border-l border-t border-pink/30" />
                   
                   <div className="flex items-start gap-6">
-                    <span className="font-italiana text-sm tracking-[0.4em] text-brass pt-1 min-w-[2.5rem]">
+                    <span className="font-italiana text-sm tracking-[0.4em] text-pink pt-1 min-w-[2.5rem]">
                       {p.n}
                     </span>
                     <div className="flex-1">
@@ -272,13 +272,13 @@ export default function ServicesPage() {
           <div className="col-span-12 md:col-span-5 md:order-1">
             <Reveal>
               <div className="flex items-center gap-4 mb-6">
-                <div className="h-px w-12 bg-brass/40" />
+                <div className="h-px w-12 bg-pink/40" />
                 <SectionLabel number="03" label="The heirloom album" />
               </div>
               <h2 className="mt-6 display-md max-w-[14ch]">
                 Made by hand,{" "}
                 <em className="italic">in Florence</em>
-                <span className="text-brass">.</span>
+                <span className="text-pink">.</span>
               </h2>
               <div className="mt-8 space-y-5 body-md text-graphite/80 leading-relaxed">
                 <p>
@@ -305,12 +305,12 @@ export default function ServicesPage() {
             <div className="col-span-12 md:col-span-4">
               <Reveal>
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="h-px w-12 bg-brass/40" />
+                  <div className="h-px w-12 bg-pink/40" />
                   <SectionLabel number="04" label="Frequently asked" />
                 </div>
                 <h2 className="mt-6 display-md max-w-[10ch]">
                   Honest <em className="italic">answers</em>
-                  <span className="text-brass">.</span>
+                  <span className="text-pink">.</span>
                 </h2>
                 <p className="mt-6 body-md max-w-sm text-graphite/80">
                   If your question is not below, write to us. We answer every
@@ -337,14 +337,14 @@ export default function ServicesPage() {
         <div className="container-narrow text-center relative">
           <Reveal>
             <div className="inline-flex items-center gap-3 mb-8">
-              <div className="h-px w-8 bg-brass/40" />
+              <div className="h-px w-8 bg-pink/40" />
               <p className="eyebrow">Ready when you are</p>
-              <div className="h-px w-8 bg-brass/40" />
+              <div className="h-px w-8 bg-pink/40" />
             </div>
             <h2 className="display-lg max-w-[20ch] mx-auto">
               Tell us about your day —{" "}
               <em className="italic">we will reply with care</em>
-              <span className="text-brass">.</span>
+              <span className="text-pink">.</span>
             </h2>
             <div className="mt-12">
               <Button href="/contact" variant="filled">

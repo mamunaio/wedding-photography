@@ -25,7 +25,7 @@ export default function JournalPage() {
         title={
           <>
             Letters from the <em className="italic">studio desk</em>
-            <span className="text-brass">.</span>
+            <span className="text-pink">.</span>
           </>
         }
         subtitle="Slow writing on the work — featured weddings, advice for couples, and reflections on the craft of documentary photography."
@@ -43,7 +43,7 @@ export default function JournalPage() {
         <div className="container-editorial">
           <Reveal>
             <div className="flex items-center gap-4 mb-12">
-              <div className="h-px w-12 bg-brass/40" />
+              <div className="h-px w-12 bg-pink/40" />
               <SectionLabel label="Latest entry" />
             </div>
           </Reveal>
@@ -55,7 +55,7 @@ export default function JournalPage() {
             <div className="col-span-12 md:col-span-7 relative">
               {/* Category badge on image */}
               <div className="absolute top-6 left-6 z-10 bg-cream/95 backdrop-blur-sm px-5 py-2.5 rounded-full">
-                <span className="font-italiana text-[0.6875rem] uppercase tracking-[0.35em] text-brass">
+                <span className="font-italiana text-[0.6875rem] uppercase tracking-[0.35em] text-pink">
                   {featured.category}
                 </span>
               </div>
@@ -81,7 +81,7 @@ export default function JournalPage() {
                   </span>
                 </div>
 
-                <h2 className="font-display text-[2.5rem] md:text-5xl lg:text-6xl font-light leading-[1.05] tracking-[-0.015em] text-ink mb-6 transition-colors duration-500 group-hover:text-brass">
+                <h2 className="font-display text-[2.5rem] md:text-5xl lg:text-6xl font-light leading-[1.05] tracking-[-0.015em] text-ink mb-6 transition-colors duration-500 group-hover:text-pink">
                   {featured.title}
                 </h2>
 
@@ -90,7 +90,7 @@ export default function JournalPage() {
                 </p>
 
                 <div className="flex items-center justify-between pt-6 border-t border-ink/10">
-                  <span className="font-italiana text-[0.75rem] uppercase tracking-[0.3em] text-taupe">
+                  <span className="font-italiana text-[0.75rem] uppercase tracking-[0.3em] text-purple">
                     {featured.date}
                   </span>
                   
@@ -111,7 +111,7 @@ export default function JournalPage() {
           <Reveal>
             <div className="flex items-center justify-between mb-16">
               <div className="flex items-center gap-4">
-                <div className="h-px w-12 bg-brass/40" />
+                <div className="h-px w-12 bg-pink/40" />
                 <SectionLabel label="All entries" />
               </div>
               <span className="font-italiana text-xs tracking-[0.3em] text-graphite/60">
@@ -127,7 +127,7 @@ export default function JournalPage() {
                   <div className="relative mb-8">
                     {/* Category badge */}
                     <div className="absolute top-4 left-4 z-10 bg-cream/95 backdrop-blur-sm px-4 py-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <span className="font-italiana text-[0.625rem] uppercase tracking-[0.35em] text-brass">
+                      <span className="font-italiana text-[0.625rem] uppercase tracking-[0.35em] text-pink">
                         {post.category}
                       </span>
                     </div>
@@ -155,7 +155,7 @@ export default function JournalPage() {
                       </span>
                     </div>
 
-                    <h3 className="font-display text-[1.75rem] md:text-3xl font-light leading-[1.15] tracking-[-0.005em] text-ink mb-4 transition-colors duration-500 group-hover:text-brass">
+                    <h3 className="font-display text-[1.75rem] md:text-3xl font-light leading-[1.15] tracking-[-0.005em] text-ink mb-4 transition-colors duration-500 group-hover:text-pink">
                       {post.title}
                     </h3>
 
@@ -164,12 +164,12 @@ export default function JournalPage() {
                     </p>
 
                     <div className="flex items-center justify-between pt-4 border-t border-ink/10">
-                      <span className="font-italiana text-[0.6875rem] uppercase tracking-[0.3em] text-taupe">
+                      <span className="font-italiana text-[0.6875rem] uppercase tracking-[0.3em] text-purple">
                         {post.date}
                       </span>
                       
                       <ArrowUpRight 
-                        className="w-4 h-4 text-graphite/40 transition-all duration-700 group-hover:text-brass group-hover:translate-x-1 group-hover:-translate-y-1" 
+                        className="w-4 h-4 text-graphite/40 transition-all duration-700 group-hover:text-pink group-hover:translate-x-1 group-hover:-translate-y-1" 
                         strokeWidth={1.5} 
                       />
                     </div>
@@ -192,17 +192,17 @@ export default function JournalPage() {
         <div className="container-narrow text-center relative">
           <Reveal>
             <div className="inline-flex items-center gap-3 mb-8">
-              <div className="h-px w-8 bg-brass/60" />
-              <span className="font-italiana text-[0.75rem] uppercase tracking-[0.35em] text-brass">
+              <div className="h-px w-8 bg-pink/60" />
+              <span className="font-italiana text-[0.75rem] uppercase tracking-[0.35em] text-pink">
                 Stay in touch
               </span>
-              <div className="h-px w-8 bg-brass/60" />
+              <div className="h-px w-8 bg-pink/60" />
             </div>
 
             <h2 className="display-md max-w-[20ch] mx-auto text-cream mb-6">
               New entries, once a month —{" "}
               <em className="italic">delivered quietly</em>
-              <span className="text-brass">.</span>
+              <span className="text-pink">.</span>
             </h2>
 
             <p className="body-md text-cream/70 max-w-lg mx-auto mb-10">
@@ -213,11 +213,11 @@ export default function JournalPage() {
               <input
                 type="email"
                 placeholder="Your email address"
-                className="flex-1 px-6 py-4 bg-cream/10 border border-cream/20 rounded-sm text-cream placeholder:text-cream/40 font-body text-sm focus:outline-none focus:border-brass transition-colors duration-500"
+                className="flex-1 px-6 py-4 bg-cream/10 border border-cream/20 rounded-sm text-cream placeholder:text-cream/40 font-body text-sm focus:outline-none focus:border-pink transition-colors duration-500"
               />
               <button
                 type="submit"
-                className="px-8 py-4 bg-brass text-ink font-italiana text-[0.75rem] uppercase tracking-[0.3em] rounded-sm hover:bg-cream transition-colors duration-500"
+                className="px-8 py-4 bg-pink text-ink font-italiana text-[0.75rem] uppercase tracking-[0.3em] rounded-sm hover:bg-cream transition-colors duration-500"
               >
                 Subscribe
               </button>

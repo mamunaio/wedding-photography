@@ -36,7 +36,7 @@ export default function Testimonials() {
                   <p className="font-display text-xl text-graphite">
                     {t.couple}
                   </p>
-                  <p className="font-italiana text-[0.8125rem] uppercase tracking-[0.3em] text-taupe">
+                  <p className="font-italiana text-[0.8125rem] uppercase tracking-[0.3em] text-purple">
                     {t.location} · {t.date}
                   </p>
                 </footer>
@@ -55,7 +55,7 @@ export default function Testimonials() {
           >
             ← Prev
           </button>
-          <span className="font-italiana text-xs tracking-[0.3em] text-taupe">
+          <span className="font-italiana text-xs tracking-[0.3em] text-purple">
             {String(index + 1).padStart(2, "0")} /{" "}
             {String(total).padStart(2, "0")}
           </span>

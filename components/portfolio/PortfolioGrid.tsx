@@ -31,8 +31,8 @@ export default function PortfolioGrid() {
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 pb-8 border-b border-ink/15">
             <div>
               <div className="flex items-center gap-4 mb-6">
-                <div className="h-px w-12 bg-brass/40" />
-                <span className="font-italiana text-[0.75rem] uppercase tracking-[0.35em] text-brass">
+                <div className="h-px w-12 bg-pink/40" />
+                <span className="font-italiana text-[0.75rem] uppercase tracking-[0.35em] text-pink">
                   Filter by type
                 </span>
               </div>
@@ -52,7 +52,7 @@ export default function PortfolioGrid() {
                     {filter === cat && (
                       <motion.div
                         layoutId="activeFilter"
-                        className="absolute bottom-0 left-0 right-0 h-px bg-brass"
+                        className="absolute bottom-0 left-0 right-0 h-px bg-pink"
                         transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
                       />
                     )}
@@ -63,7 +63,7 @@ export default function PortfolioGrid() {
             
             <div className="flex items-center gap-4">
               <div className="h-px w-8 bg-ink/20" />
-              <p className="font-italiana text-sm tracking-[0.3em] text-taupe">
+              <p className="font-italiana text-sm tracking-[0.3em] text-purple">
                 {String(filtered.length).padStart(2, "0")}{" "}
                 <span className="text-graphite/60">
                   {filtered.length === 1 ? "story" : "stories"}
@@ -119,20 +119,20 @@ export default function PortfolioGrid() {
                     <div className="flex items-start justify-between gap-6">
                       <div className="flex-1">
                         <div className="flex items-center gap-3 mb-4">
-                          <span className="font-italiana text-[0.75rem] uppercase tracking-[0.35em] text-brass">
+                          <span className="font-italiana text-[0.75rem] uppercase tracking-[0.35em] text-pink">
                             {entry.category}
                           </span>
-                          <span className="h-px w-6 bg-brass/30" />
+                          <span className="h-px w-6 bg-pink/30" />
                           <span className="font-italiana text-[0.6875rem] tracking-[0.3em] text-graphite/50">
                             {entry.date.split(" ").pop()}
                           </span>
                         </div>
                         
-                        <h3 className="font-display text-[2rem] md:text-[2.5rem] font-light leading-[1.1] tracking-[-0.01em] text-ink mb-3 transition-colors duration-500 group-hover:text-brass">
+                        <h3 className="font-display text-[2rem] md:text-[2.5rem] font-light leading-[1.1] tracking-[-0.01em] text-ink mb-3 transition-colors duration-500 group-hover:text-pink">
                           {entry.couple}
                         </h3>
                         
-                        <div className="flex items-center gap-2 text-taupe">
+                        <div className="flex items-center gap-2 text-purple">
                           <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                             <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                             <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />

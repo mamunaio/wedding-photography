@@ -8,12 +8,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        cream: "#F5F1EC",
-        bone: "#EDE6DC",
-        ink: "#1C1B17",
-        graphite: "#3A3833",
-        taupe: "#8B6F47",
-        brass: "#A88A5C",
+        cream: "#FAF8F5",
+        bone: "#F5F0EB",
+        ink: "#1A1A1A",
+        graphite: "#4A4A4A",
+        purple: "#7C3AED",
+        pink: "#EC4899",
+        lavender: "#A78BFA",
+        rose: "#F472B6",
         stone: "#A39B8B",
         sage: "#8A8B7A",
       },

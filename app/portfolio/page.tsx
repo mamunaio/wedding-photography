@@ -18,7 +18,7 @@ export default function PortfolioPage() {
           <>
             A decade of{" "}
             <em className="italic font-light">love stories</em>
-            <span className="text-brass">.</span>
+            <span className="text-pink">.</span>
           </>
         }
         subtitle="Five recent weddings, told as they happened. Each one made of small, honest moments — and the kind of light that only exists once. Documentary photography for couples who value authenticity over performance."

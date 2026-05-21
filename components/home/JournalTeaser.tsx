@@ -42,13 +42,13 @@ export default function JournalTeaser() {
                 <p className="eyebrow mb-3">
                   {post.category} · {post.readTime}
                 </p>
-                <h3 className="font-display text-2xl md:text-3xl font-light leading-tight tracking-[-0.005em] group-hover:text-taupe transition-colors duration-500">
+                <h3 className="font-display text-2xl md:text-3xl font-light leading-tight tracking-[-0.005em] group-hover:text-purple transition-colors duration-500">
                   {post.title}
                 </h3>
                 <p className="mt-4 body-md text-graphite/80 line-clamp-3">
                   {post.excerpt}
                 </p>
-                <p className="mt-6 font-italiana text-[0.75rem] uppercase tracking-[0.3em] text-taupe">
+                <p className="mt-6 font-italiana text-[0.75rem] uppercase tracking-[0.3em] text-purple">
                   {post.date}
                 </p>
               </Link>

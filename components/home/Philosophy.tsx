@@ -11,7 +11,7 @@ export default function Philosophy() {
       <div className="container-editorial">
         <Reveal>
           <div className="flex items-center gap-6">
-            <div className="h-px w-12 bg-brass/40" />
+            <div className="h-px w-12 bg-pink/40" />
             <SectionLabel number="01" label="A note from the studio" />
           </div>
         </Reveal>
@@ -21,13 +21,13 @@ export default function Philosophy() {
             <Reveal>
               <div className="relative">
                 {/* Decorative quote mark */}
-                <div className="absolute -left-4 md:-left-8 -top-2 text-brass/20 font-display text-[8rem] leading-none pointer-events-none select-none">
+                <div className="absolute -left-4 md:-left-8 -top-2 text-pink/20 font-display text-[8rem] leading-none pointer-events-none select-none">
                   "
                 </div>
                 <h2 className="display-lg max-w-[18ch] relative">
                   We are quiet observers of an{" "}
                   <em className="italic font-light text-ink/90">unrepeatable day</em>
-                  <span className="text-brass">.</span>
+                  <span className="text-pink">.</span>
                 </h2>
               </div>
             </Reveal>

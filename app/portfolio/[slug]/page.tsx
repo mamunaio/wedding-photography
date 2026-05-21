@@ -62,7 +62,7 @@ export default async function PortfolioDetailPage({
               {entry.partners.one}
               <span className="italic"> & </span>
               {entry.partners.two}
-              <span className="text-brass">.</span>
+              <span className="text-pink">.</span>
             </h1>
             <p className="mt-8 font-italiana text-sm tracking-[0.35em] uppercase text-cream/80">
               {entry.location}
@@ -121,7 +121,7 @@ export default async function PortfolioDetailPage({
                 <p
                   className={
                     i === 0
-                      ? "first-letter:font-display first-letter:text-7xl first-letter:font-light first-letter:float-left first-letter:leading-[0.85] first-letter:mr-3 first-letter:mt-1 first-letter:text-taupe"
+                      ? "first-letter:font-display first-letter:text-7xl first-letter:font-light first-letter:float-left first-letter:leading-[0.85] first-letter:mr-3 first-letter:mt-1 first-letter:text-purple"
                       : ""
                   }
                 >
@@ -166,7 +166,7 @@ export default async function PortfolioDetailPage({
             href={`/portfolio/${prev.slug}`}
             className="group flex flex-col gap-4"
           >
-            <span className="font-italiana text-[0.75rem] uppercase tracking-[0.35em] text-brass">
+            <span className="font-italiana text-[0.75rem] uppercase tracking-[0.35em] text-pink">
               ← Previous wedding
             </span>
             <span className="font-display text-3xl md:text-4xl font-light leading-tight">
@@ -181,7 +181,7 @@ export default async function PortfolioDetailPage({
             href={`/portfolio/${next.slug}`}
             className="group flex flex-col gap-4 md:items-end md:text-right"
           >
-            <span className="font-italiana text-[0.75rem] uppercase tracking-[0.35em] text-brass">
+            <span className="font-italiana text-[0.75rem] uppercase tracking-[0.35em] text-pink">
               Next wedding →
             </span>
             <span className="font-display text-3xl md:text-4xl font-light leading-tight">

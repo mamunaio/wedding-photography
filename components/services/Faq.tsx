@@ -22,7 +22,7 @@ export default function Faq() {
               <span className="font-display text-xl md:text-2xl font-light text-ink leading-tight pr-4">
                 {item.q}
               </span>
-              <span className="flex-shrink-0 text-taupe transition-transform duration-500 ease-editorial group-hover:scale-110">
+              <span className="flex-shrink-0 text-purple transition-transform duration-500 ease-editorial group-hover:scale-110">
                 {isOpen ? (
                   <Minus className="w-5 h-5" strokeWidth={1.25} />
                 ) : (

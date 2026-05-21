@@ -27,7 +27,7 @@ export default function SectionLabel({
         <span
           className={cn(
             "font-body text-[0.75rem] tracking-[0.15em] font-semibold",
-            tone === "ink" ? "text-taupe" : "text-brass",
+            tone === "ink" ? "text-purple" : "text-pink",
           )}
         >
           {number}

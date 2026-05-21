@@ -68,7 +68,7 @@ export default function ClientAccessPage() {
             <div className="col-span-12 md:col-span-5">
               <Reveal delay={0.2}>
                 <div className="border border-cream/15 bg-ink/40 backdrop-blur-md p-10 md:p-12">
-                  <p className="font-italiana text-[0.75rem] uppercase tracking-[0.35em] text-brass mb-8">
+                  <p className="font-italiana text-[0.75rem] uppercase tracking-[0.35em] text-pink mb-8">
                     Private gallery
                   </p>
                   <AccessForm />
@@ -84,7 +84,7 @@ export default function ClientAccessPage() {
                       Cannot find it?{" "}
                       <Link
                         href="/contact"
-                        className="underline underline-offset-4 text-cream hover:text-brass"
+                        className="underline underline-offset-4 text-cream hover:text-pink"
                       >
                         Write to us
                       </Link>{" "}
@@ -118,7 +118,7 @@ export default function ClientAccessPage() {
             {features.map((f, i) => (
               <Reveal key={f.title} delay={i * 0.06}>
                 <div className="flex flex-col items-start gap-6">
-                  <span className="inline-flex items-center justify-center w-12 h-12 border border-ink/15 text-taupe">
+                  <span className="inline-flex items-center justify-center w-12 h-12 border border-ink/15 text-purple">
                     <f.icon className="w-5 h-5" strokeWidth={1.25} />
                   </span>
                   <div>

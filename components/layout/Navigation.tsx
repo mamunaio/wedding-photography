@@ -11,9 +11,9 @@ import { site } from "@/lib/data/site";
 const links = [
   { href: "/portfolio", label: "Portfolio" },
   { href: "/about", label: "About" },
-  { href: "/services", label: "Investment" },
-  { href: "/journal", label: "Journal" },
-  { href: "/contact", label: "Inquire" },
+  { href: "/services", label: "Services" },
+  { href: "/journal", label: "Blog" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Navigation() {
@@ -69,13 +69,12 @@ export default function Navigation() {
           <Link
             href="/"
             className={cn(
-              "font-display text-xl md:text-2xl tracking-tight transition-colors duration-500",
+              "font-display text-xl md:text-2xl tracking-tight transition-colors duration-500 font-semibold",
               shouldUseDarkNavbar ? "text-cream" : "text-ink",
             )}
           >
-            <span className="font-light italic">Aurelia</span>
-            <span className="mx-2 opacity-60">&</span>
-            <span className="font-light">Vow</span>
+            <span className="font-semibold">Weddings</span>
+            <span className="mx-1.5 text-pink">Unlimited</span>
           </Link>
 
           <nav className="hidden lg:flex items-center gap-10">
