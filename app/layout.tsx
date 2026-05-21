@@ -8,7 +8,7 @@ import { site } from "@/lib/data/site";
 
 const display = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["300", "400", "500"],
+  weight: ["300", "400", "500", "600"],
   style: ["normal", "italic"],
   variable: "--font-display",
   display: "swap",
@@ -23,7 +23,7 @@ const italiana = Italiana({
 
 const body = Inter({
   subsets: ["latin"],
-  weight: ["300", "400", "500"],
+  weight: ["400", "500", "600"],
   variable: "--font-body",
   display: "swap",
 });
