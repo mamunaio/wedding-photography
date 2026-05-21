@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { motion } from "framer-motion";
 import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
@@ -21,12 +21,11 @@ export default function Reveal({
   className,
   as = "div",
 }: Props) {
-  const prefersReduced = useReducedMotion();
   const Tag = motion[as];
 
   return (
     <Tag
-      initial={prefersReduced ? false : { opacity: 0, y }}
+      initial={false}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{

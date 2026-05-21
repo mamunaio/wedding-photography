@@ -6,6 +6,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { portfolio } from "@/lib/data/portfolio";
 import { cn } from "@/lib/utils";
+import { ArrowUpRight } from "lucide-react";
 
 const categories = ["All", "Wedding", "Elopement", "Engagement"] as const;
 type Category = (typeof categories)[number];
@@ -19,40 +20,67 @@ export default function PortfolioGrid() {
       : portfolio.filter((p) => p.category === filter);
 
   return (
-    <section className="py-20 md:py-28 bg-cream">
+    <section className="relative py-20 md:py-32 bg-cream overflow-hidden">
+      {/* Decorative background elements */}
+      <div className="absolute top-40 right-10 w-px h-64 bg-gradient-to-b from-transparent via-brass/10 to-transparent" />
+      <div className="absolute bottom-40 left-10 w-px h-48 bg-gradient-to-b from-transparent via-brass/10 to-transparent" />
+      
       <div className="container-editorial">
-        {/* Filter row */}
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-16 md:mb-24 pb-6 border-b border-ink/10">
-          <div className="flex items-center flex-wrap gap-x-8 gap-y-3">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setFilter(cat)}
-                className={cn(
-                  "font-italiana text-[0.8125rem] uppercase tracking-[0.35em] transition-colors duration-500 pb-1 border-b",
-                  filter === cat
-                    ? "text-ink border-ink"
-                    : "text-graphite/60 border-transparent hover:text-ink",
-                )}
-              >
-                {cat}
-              </button>
-            ))}
+        {/* Enhanced Filter Section */}
+        <div className="relative mb-20 md:mb-32">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 pb-8 border-b border-ink/15">
+            <div>
+              <div className="flex items-center gap-4 mb-6">
+                <div className="h-px w-12 bg-brass/40" />
+                <span className="font-italiana text-[0.75rem] uppercase tracking-[0.35em] text-brass">
+                  Filter by type
+                </span>
+              </div>
+              <div className="flex items-center flex-wrap gap-x-6 gap-y-4">
+                {categories.map((cat) => (
+                  <button
+                    key={cat}
+                    onClick={() => setFilter(cat)}
+                    className={cn(
+                      "relative font-italiana text-[0.9375rem] uppercase tracking-[0.3em] transition-all duration-500 pb-2",
+                      filter === cat
+                        ? "text-ink"
+                        : "text-graphite/50 hover:text-ink",
+                    )}
+                  >
+                    {cat}
+                    {filter === cat && (
+                      <motion.div
+                        layoutId="activeFilter"
+                        className="absolute bottom-0 left-0 right-0 h-px bg-brass"
+                        transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+                      />
+                    )}
+                  </button>
+                ))}
+              </div>
+            </div>
+            
+            <div className="flex items-center gap-4">
+              <div className="h-px w-8 bg-ink/20" />
+              <p className="font-italiana text-sm tracking-[0.3em] text-taupe">
+                {String(filtered.length).padStart(2, "0")}{" "}
+                <span className="text-graphite/60">
+                  {filtered.length === 1 ? "story" : "stories"}
+                </span>
+              </p>
+            </div>
           </div>
-          <p className="font-italiana text-xs tracking-[0.3em] text-taupe">
-            {String(filtered.length).padStart(2, "0")}{" "}
-            {filtered.length === 1 ? "project" : "projects"}
-          </p>
         </div>
 
         <AnimatePresence mode="wait">
           <motion.div
             key={filter}
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-20 md:gap-y-32"
+            exit={{ opacity: 0, y: -30 }}
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+            className="grid grid-cols-1 md:grid-cols-2 gap-x-12 lg:gap-x-16 gap-y-24 md:gap-y-40"
           >
             {filtered.map((entry, i) => (
               <Link
@@ -61,38 +89,91 @@ export default function PortfolioGrid() {
                 className={cn(
                   "group block",
                   // Editorial offsets: alternate margin-top for staggered grid
-                  i % 2 === 1 && "md:mt-24",
+                  i % 2 === 1 && "md:mt-32",
                 )}
               >
-                <div className="relative overflow-hidden bg-bone aspect-[4/5]">
-                  <Image
-                    src={entry.cover}
-                    alt={`${entry.couple} — ${entry.location}`}
-                    fill
-                    sizes="(min-width: 768px) 50vw, 100vw"
-                    className="object-cover transition-transform duration-[1400ms] ease-editorial group-hover:scale-[1.04]"
-                  />
-                  <div className="absolute inset-0 bg-ink/0 group-hover:bg-ink/10 transition-colors duration-700" />
-                </div>
-
-                <div className="mt-8 flex items-baseline justify-between gap-6">
-                  <div>
-                    <p className="eyebrow mb-3">{entry.category}</p>
-                    <h3 className="font-display text-3xl md:text-4xl font-light leading-tight tracking-[-0.005em]">
-                      {entry.couple}
-                    </h3>
-                    <p className="mt-2 font-italiana text-xs tracking-[0.25em] uppercase text-taupe">
-                      {entry.location}
-                    </p>
+                <div className="relative">
+                  {/* Image container with enhanced hover effect */}
+                  <div className="relative overflow-hidden bg-bone aspect-[4/5] mb-8">
+                    <Image
+                      src={entry.cover}
+                      alt={`${entry.couple} — ${entry.location}`}
+                      fill
+                      sizes="(min-width: 768px) 50vw, 100vw"
+                      className="object-cover transition-all duration-[1600ms] ease-editorial group-hover:scale-[1.06]"
+                    />
+                    {/* Gradient overlay on hover */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-ink/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                    
+                    {/* Hover icon */}
+                    <div className="absolute top-6 right-6 w-12 h-12 rounded-full bg-cream/90 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-x-4 group-hover:translate-x-0">
+                      <ArrowUpRight className="w-5 h-5 text-ink" strokeWidth={1.5} />
+                    </div>
                   </div>
-                  <span className="font-italiana text-[0.75rem] tracking-[0.25em] text-graphite/50 whitespace-nowrap">
-                    {entry.date.split(" ").pop()}
-                  </span>
+
+                  {/* Content section with better spacing */}
+                  <div className="relative">
+                    {/* Decorative line */}
+                    <div className="absolute -left-6 top-0 w-px h-full bg-gradient-to-b from-brass/30 via-brass/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                    
+                    <div className="flex items-start justify-between gap-6">
+                      <div className="flex-1">
+                        <div className="flex items-center gap-3 mb-4">
+                          <span className="font-italiana text-[0.75rem] uppercase tracking-[0.35em] text-brass">
+                            {entry.category}
+                          </span>
+                          <span className="h-px w-6 bg-brass/30" />
+                          <span className="font-italiana text-[0.6875rem] tracking-[0.3em] text-graphite/50">
+                            {entry.date.split(" ").pop()}
+                          </span>
+                        </div>
+                        
+                        <h3 className="font-display text-[2rem] md:text-[2.5rem] font-light leading-[1.1] tracking-[-0.01em] text-ink mb-3 transition-colors duration-500 group-hover:text-brass">
+                          {entry.couple}
+                        </h3>
+                        
+                        <div className="flex items-center gap-2 text-taupe">
+                          <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                          </svg>
+                          <p className="font-italiana text-xs tracking-[0.25em] uppercase">
+                            {entry.location}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* View project link */}
+                    <div className="mt-6 flex items-center gap-2 font-italiana text-[0.75rem] uppercase tracking-[0.3em] text-graphite/60 group-hover:text-ink transition-colors duration-500">
+                      <span>View story</span>
+                      <motion.span
+                        className="transition-transform duration-700 ease-editorial"
+                        animate={{ x: 0 }}
+                        whileHover={{ x: 4 }}
+                      >
+                        →
+                      </motion.span>
+                    </div>
+                  </div>
                 </div>
               </Link>
             ))}
           </motion.div>
         </AnimatePresence>
+
+        {/* Bottom decorative element */}
+        {filtered.length === 0 && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="text-center py-20"
+          >
+            <p className="font-italiana text-sm tracking-[0.3em] text-graphite/60">
+              No stories found in this category
+            </p>
+          </motion.div>
+        )}
       </div>
     </section>
   );

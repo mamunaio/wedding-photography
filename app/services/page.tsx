@@ -9,9 +9,10 @@ import Faq from "@/components/services/Faq";
 import { services } from "@/lib/data/services";
 import { img, PHOTOS } from "@/lib/images";
 import { cn } from "@/lib/utils";
+import { Check } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Investment",
+  title: "Investment — Aurelia & Vow",
   description:
     "Three collections, made to be passed down. From half-day ceremonies to multi-day destination celebrations.",
 };
@@ -57,7 +58,8 @@ export default function ServicesPage() {
         title={
           <>
             Three collections,{" "}
-            <em className="italic">made to be passed down</em>.
+            <em className="italic">made to be passed down</em>
+            <span className="text-brass">.</span>
           </>
         }
         subtitle="Each collection is built around a different shape of day — from a quiet half-day ceremony to a four-day destination celebration."
@@ -67,21 +69,29 @@ export default function ServicesPage() {
       />
 
       {/* Intro statement */}
-      <section className="py-32 md:py-44 bg-cream">
+      <section className="relative py-32 md:py-44 bg-cream overflow-hidden">
+        {/* Decorative elements */}
+        <div className="absolute top-20 left-1/4 w-px h-32 bg-gradient-to-b from-transparent via-brass/10 to-transparent" />
+        <div className="absolute bottom-20 right-1/4 w-px h-40 bg-gradient-to-b from-transparent via-brass/10 to-transparent" />
+        
         <div className="container-narrow text-center">
           <Reveal>
-            <SectionLabel
-              number="01"
-              label="A note on investment"
-              align="center"
-            />
+            <div className="flex items-center justify-center gap-4 mb-8">
+              <div className="h-px w-12 bg-brass/40" />
+              <SectionLabel
+                number="01"
+                label="A note on investment"
+                align="center"
+              />
+              <div className="h-px w-12 bg-brass/40" />
+            </div>
             <p className="mt-12 font-display text-2xl md:text-4xl font-light leading-[1.3] text-ink max-w-[28ch] mx-auto">
               We accept fifteen weddings a year. Our collections begin at{" "}
-              <em className="italic text-taupe">$5,400</em>. The average
+              <span className="text-brass font-normal">$5,400</span>. The average
               investment with our studio is{" "}
-              <em className="italic text-taupe">$11,200</em>.
+              <span className="text-brass font-normal">$11,200</span>.
             </p>
-            <p className="mt-10 body-lg max-w-xl mx-auto">
+            <p className="mt-10 body-lg max-w-xl mx-auto text-graphite/80">
               We believe in pricing transparency. The numbers below are exactly
               what you will pay — not estimates, not starting points, not
               add-ons hidden behind a phone call.
@@ -91,75 +101,91 @@ export default function ServicesPage() {
       </section>
 
       {/* Detailed packages */}
-      <section className="py-24 md:py-32 bg-bone">
+      <section className="py-24 md:py-40 bg-gradient-to-b from-bone to-cream">
         <div className="container-editorial">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-16 lg:gap-x-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-6">
             {services.map((service, i) => (
               <Reveal
                 key={service.name}
                 delay={i * 0.1}
                 className={cn(
-                  "relative bg-cream p-10 md:p-12 flex flex-col",
-                  service.popular &&
-                    "lg:scale-[1.04] lg:shadow-2xl lg:shadow-ink/5",
+                  "relative bg-cream rounded-sm overflow-hidden flex flex-col transition-all duration-700",
+                  service.popular
+                    ? "lg:scale-[1.06] shadow-2xl shadow-ink/10 border-2 border-brass/20"
+                    : "border border-ink/10 hover:border-brass/30 hover:shadow-xl hover:shadow-ink/5",
                 )}
               >
                 {service.popular && (
-                  <span className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-ink text-cream font-italiana text-[0.75rem] uppercase tracking-[0.35em] px-5 py-2">
-                    Most chosen
-                  </span>
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brass/50 via-brass to-brass/50" />
                 )}
 
-                <div className="mb-10">
-                  <p className="font-italiana text-[0.8125rem] uppercase tracking-[0.35em] text-taupe mb-4">
-                    Collection 0{i + 1}
-                  </p>
-                  <h3 className="font-display text-4xl md:text-5xl font-light leading-tight">
-                    {service.name}
-                  </h3>
-                  <p className="mt-2 font-italiana text-xs tracking-[0.3em] uppercase text-graphite/60">
-                    {service.subtitle}
-                  </p>
+                <div className="p-10 md:p-12">
+                  {service.popular && (
+                    <div className="inline-flex items-center gap-2 bg-brass/10 text-brass font-italiana text-[0.6875rem] uppercase tracking-[0.35em] px-4 py-2 mb-6 rounded-full">
+                      <Check className="w-3 h-3" strokeWidth={2.5} />
+                      Most chosen
+                    </div>
+                  )}
+
+                  <div className="mb-8">
+                    <p className="font-italiana text-[0.75rem] uppercase tracking-[0.35em] text-brass mb-4">
+                      Collection 0{i + 1}
+                    </p>
+                    <h3 className="font-display text-[2.5rem] md:text-5xl font-light leading-[1.1] text-ink mb-2">
+                      {service.name}
+                    </h3>
+                    <p className="font-italiana text-xs tracking-[0.3em] uppercase text-graphite/60">
+                      {service.subtitle}
+                    </p>
+                  </div>
+
+                  <p className="body-md text-graphite/80 mb-8 leading-relaxed">{service.description}</p>
+
+                  <div className="space-y-6 mb-8">
+                    <div>
+                      <p className="label mb-4 text-graphite/70 flex items-center gap-2">
+                        <span className="w-4 h-px bg-brass/40" />
+                        Includes
+                      </p>
+                      <ul className="space-y-3">
+                        {service.inclusions.map((inc, j) => (
+                          <li
+                            key={j}
+                            className="flex gap-3 text-sm leading-relaxed text-graphite/90"
+                          >
+                            <Check className="w-4 h-4 text-brass mt-0.5 flex-shrink-0" strokeWidth={2} />
+                            <span>{inc}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {service.addOns && (
+                      <div>
+                        <p className="label mb-3 text-graphite/70 flex items-center gap-2">
+                          <span className="w-4 h-px bg-ink/20" />
+                          Add-ons available
+                        </p>
+                        <ul className="space-y-2">
+                          {service.addOns.map((a, j) => (
+                            <li
+                              key={j}
+                              className="text-sm text-graphite/70 italic pl-7"
+                            >
+                              + {a}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
                 </div>
 
-                <p className="body-md mb-10">{service.description}</p>
-
-                <p className="label mb-4 text-graphite/60">Includes</p>
-                <ul className="space-y-3 mb-10">
-                  {service.inclusions.map((inc, j) => (
-                    <li
-                      key={j}
-                      className="flex gap-3 text-sm leading-relaxed text-graphite"
-                    >
-                      <span className="text-brass mt-[0.45rem] flex-shrink-0">
-                        ·
-                      </span>
-                      <span>{inc}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                {service.addOns && (
-                  <>
-                    <p className="label mb-4 text-graphite/60">Add-ons</p>
-                    <ul className="space-y-2 mb-10">
-                      {service.addOns.map((a, j) => (
-                        <li
-                          key={j}
-                          className="text-sm text-graphite/70 italic"
-                        >
-                          {a}
-                        </li>
-                      ))}
-                    </ul>
-                  </>
-                )}
-
-                <div className="mt-auto pt-8 border-t border-ink/10">
-                  <p className="label mb-2 text-graphite/60">{service.duration}</p>
+                <div className="mt-auto p-10 md:p-12 pt-8 border-t border-ink/10 bg-bone/30">
+                  <p className="label mb-3 text-graphite/60">{service.duration}</p>
                   <div className="flex items-baseline justify-between">
-                    <span className="label">Investment from</span>
-                    <span className="font-display text-3xl font-light">
+                    <span className="label text-graphite/70">Investment from</span>
+                    <span className="font-display text-[2.5rem] font-light text-ink">
                       {service.startingAt}
                     </span>
                   </div>
@@ -167,37 +193,62 @@ export default function ServicesPage() {
               </Reveal>
             ))}
           </div>
+
+          {/* Bottom note */}
+          <Reveal delay={0.4}>
+            <div className="mt-16 text-center">
+              <p className="font-italiana text-sm tracking-[0.25em] text-graphite/60">
+                All collections include travel within the continental U.S.
+              </p>
+            </div>
+          </Reveal>
         </div>
       </section>
 
       {/* Process / How we work */}
-      <section className="py-32 md:py-48 bg-ink text-cream">
-        <div className="container-editorial">
+      <section className="relative py-32 md:py-48 bg-ink text-cream overflow-hidden">
+        {/* Decorative grid pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-0 left-1/4 w-px h-full bg-cream" />
+          <div className="absolute top-0 left-2/4 w-px h-full bg-cream" />
+          <div className="absolute top-0 left-3/4 w-px h-full bg-cream" />
+        </div>
+
+        <div className="container-editorial relative">
           <Reveal>
-            <SectionLabel number="02" label="The process" tone="cream" />
+            <div className="flex items-center gap-4 mb-6">
+              <div className="h-px w-12 bg-brass/60" />
+              <SectionLabel number="02" label="The process" tone="cream" />
+            </div>
             <h2 className="mt-6 display-lg max-w-[16ch] text-cream">
               From inquiry to{" "}
-              <em className="italic">heirloom album</em>.
+              <em className="italic">heirloom album</em>
+              <span className="text-brass">.</span>
             </h2>
             <p className="mt-8 body-lg text-cream/70 max-w-xl">
               Six steps. Sixteen months on average. Done quietly and with care.
             </p>
           </Reveal>
 
-          <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-14">
+          <div className="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
             {process.map((p, i) => (
-              <Reveal key={p.n} delay={i * 0.05}>
-                <div className="flex gap-8">
-                  <span className="font-italiana text-xs tracking-[0.4em] text-brass pt-2">
-                    {p.n}
-                  </span>
-                  <div className="flex-1">
-                    <h3 className="font-display text-3xl font-light leading-tight">
-                      {p.title}
-                    </h3>
-                    <p className="mt-3 body-md text-cream/70 max-w-md">
-                      {p.body}
-                    </p>
+              <Reveal key={p.n} delay={i * 0.08}>
+                <div className="relative">
+                  {/* Decorative corner */}
+                  <div className="absolute -top-4 -left-4 w-8 h-8 border-l border-t border-brass/30" />
+                  
+                  <div className="flex items-start gap-6">
+                    <span className="font-italiana text-sm tracking-[0.4em] text-brass pt-1 min-w-[2.5rem]">
+                      {p.n}
+                    </span>
+                    <div className="flex-1">
+                      <h3 className="font-display text-[1.75rem] font-light leading-tight text-cream mb-4">
+                        {p.title}
+                      </h3>
+                      <p className="body-md text-cream/70 leading-relaxed">
+                        {p.body}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </Reveal>
@@ -207,8 +258,8 @@ export default function ServicesPage() {
       </section>
 
       {/* Album feature */}
-      <section className="py-24 md:py-32 bg-cream">
-        <div className="container-editorial grid grid-cols-12 gap-y-12 md:gap-x-16 items-center">
+      <section className="py-32 md:py-40 bg-cream">
+        <div className="container-editorial grid grid-cols-12 gap-y-16 md:gap-x-20 items-center">
           <div className="col-span-12 md:col-span-7 md:order-2">
             <ImageReveal
               src={img(PHOTOS.editorialC, 1600)}
@@ -220,12 +271,16 @@ export default function ServicesPage() {
 
           <div className="col-span-12 md:col-span-5 md:order-1">
             <Reveal>
-              <SectionLabel number="03" label="The heirloom album" />
+              <div className="flex items-center gap-4 mb-6">
+                <div className="h-px w-12 bg-brass/40" />
+                <SectionLabel number="03" label="The heirloom album" />
+              </div>
               <h2 className="mt-6 display-md max-w-[14ch]">
                 Made by hand,{" "}
-                <em className="italic">in Florence</em>.
+                <em className="italic">in Florence</em>
+                <span className="text-brass">.</span>
               </h2>
-              <div className="mt-8 space-y-5 body-md">
+              <div className="mt-8 space-y-5 body-md text-graphite/80 leading-relaxed">
                 <p>
                   Every Heirloom and Atelier collection ships with a hand-bound
                   Italian leather album, made in a small bindery a stone's
@@ -246,14 +301,18 @@ export default function ServicesPage() {
       {/* FAQ */}
       <section className="py-32 md:py-48 bg-bone">
         <div className="container-editorial">
-          <div className="grid grid-cols-12 gap-y-12 md:gap-x-16">
+          <div className="grid grid-cols-12 gap-y-16 md:gap-x-20">
             <div className="col-span-12 md:col-span-4">
               <Reveal>
-                <SectionLabel number="04" label="Frequently asked" />
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="h-px w-12 bg-brass/40" />
+                  <SectionLabel number="04" label="Frequently asked" />
+                </div>
                 <h2 className="mt-6 display-md max-w-[10ch]">
-                  Honest <em className="italic">answers</em>.
+                  Honest <em className="italic">answers</em>
+                  <span className="text-brass">.</span>
                 </h2>
-                <p className="mt-6 body-md max-w-sm">
+                <p className="mt-6 body-md max-w-sm text-graphite/80">
                   If your question is not below, write to us. We answer every
                   inquiry personally within two working days.
                 </p>
@@ -270,13 +329,22 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 md:py-32 bg-cream">
-        <div className="container-narrow text-center">
+      <section className="relative py-32 md:py-40 bg-gradient-to-b from-cream to-bone overflow-hidden">
+        {/* Decorative elements */}
+        <div className="absolute top-1/2 left-10 w-px h-64 bg-gradient-to-b from-transparent via-brass/10 to-transparent" />
+        <div className="absolute top-1/2 right-10 w-px h-64 bg-gradient-to-b from-transparent via-brass/10 to-transparent" />
+        
+        <div className="container-narrow text-center relative">
           <Reveal>
-            <p className="eyebrow mb-8">Ready when you are</p>
+            <div className="inline-flex items-center gap-3 mb-8">
+              <div className="h-px w-8 bg-brass/40" />
+              <p className="eyebrow">Ready when you are</p>
+              <div className="h-px w-8 bg-brass/40" />
+            </div>
             <h2 className="display-lg max-w-[20ch] mx-auto">
               Tell us about your day —{" "}
-              <em className="italic">we will reply with care</em>.
+              <em className="italic">we will reply with care</em>
+              <span className="text-brass">.</span>
             </h2>
             <div className="mt-12">
               <Button href="/contact" variant="filled">

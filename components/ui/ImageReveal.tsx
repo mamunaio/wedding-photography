@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
@@ -33,11 +33,9 @@ export default function ImageReveal({
   containerClassName,
   delay = 0,
 }: Props) {
-  const prefersReduced = useReducedMotion();
-
   return (
     <motion.div
-      initial={prefersReduced ? false : { clipPath: "inset(0 0 100% 0)" }}
+      initial={false}
       whileInView={{ clipPath: "inset(0 0 0% 0)" }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{
@@ -52,7 +50,7 @@ export default function ImageReveal({
       )}
     >
       <motion.div
-        initial={prefersReduced ? false : { scale: 1.15 }}
+        initial={false}
         whileInView={{ scale: 1 }}
         viewport={{ once: true, margin: "-50px" }}
         transition={{

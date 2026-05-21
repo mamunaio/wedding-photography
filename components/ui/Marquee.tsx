@@ -1,3 +1,5 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 
 type Props = {
@@ -11,8 +13,8 @@ export default function Marquee({
   separator = "✦",
   className,
 }: Props) {
-  // Duplicate the list so the marquee loops seamlessly.
-  const looped = [...items, ...items, ...items, ...items];
+  // Duplicate items enough times for seamless loop
+  const duplicatedItems = [...items, ...items];
 
   return (
     <div
@@ -21,14 +23,14 @@ export default function Marquee({
         className,
       )}
     >
-      <div className="flex animate-marquee gap-12 will-change-transform">
-        {looped.map((item, i) => (
+      <div className="inline-flex animate-marquee">
+        {duplicatedItems.map((item, i) => (
           <span
             key={i}
-            className="flex items-center gap-12 font-display text-2xl md:text-4xl font-light italic"
+            className="inline-flex items-center gap-8 md:gap-12 px-4 md:px-6 font-display text-2xl md:text-4xl font-light italic"
           >
             {item}
-            <span className="text-taupe not-italic text-base">{separator}</span>
+            <span className="text-taupe not-italic text-base md:text-lg opacity-40">{separator}</span>
           </span>
         ))}
       </div>
