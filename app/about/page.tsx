@@ -12,52 +12,52 @@ import { site } from "@/lib/data/site";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "A small studio in Charleston, photographing weddings worldwide since 2014.",
+    "Family-owned wedding photography, videography, and DJ services. Meet Alex & Jennifer Leon, founders of Weddings Unlimited.",
 };
 
 const principles = [
   {
     n: "01",
-    title: "Documentary first",
-    body: "We are quiet observers. We do not pose your guests, interrupt your ceremony, or stage moments that did not happen. The day is yours.",
+    title: "Unlimited Time",
+    body: "No hourly limits, no watching the clock. We stay from your first look to your last dance. Your day unfolds at your pace, not ours.",
   },
   {
     n: "02",
-    title: "Editorial sensibility",
-    body: "Restraint. Negative space. The tension between motion and stillness. We approach each wedding the way a magazine approaches a portrait sitting.",
+    title: "Transparent Pricing",
+    body: "No surprise fees. No hidden charges. Everything is included in your package. What you see is what you pay — always.",
   },
   {
     n: "03",
-    title: "Heirloom-quality print",
-    body: "Every gallery is paired with a hand-bound album, made in a small bindery in Florence. The album is the only object that survives a wedding.",
+    title: "Completely Custom",
+    body: "From playlists to poses, shot lists to timelines — everything is tailored to you. Your style, your vibe, your people.",
   },
   {
     n: "04",
-    title: "Trusted, never rushed",
-    body: "We accept a small number of weddings each year — fifteen, no more. This is not a hedge against scale; it is the only way to do this work well.",
+    title: "Completely Reliable",
+    body: "Backup equipment, backup team members, backup plans A through Z. Rain or shine, emergency or not — we will be at your wedding.",
   },
 ];
 
 const timeline = [
   {
-    year: "2014",
-    title: "Aurelia & Vow founded",
-    body: "Established in a converted carriage house in downtown Charleston after a decade as a documentary photographer.",
+    year: "2015",
+    title: "The Beginning",
+    body: "Alex & Jennifer got married and experienced firsthand the stress of coordinating multiple vendors. They knew there had to be a better way.",
   },
   {
     year: "2017",
-    title: "First international wedding",
-    body: "A four-day celebration in the Cotswolds. The beginning of our love affair with the long destination wedding.",
+    title: "Weddings Unlimited Founded",
+    body: "Started with just photography services in Houston. The mission: provide stress-free, unforgettable wedding experiences with unlimited time coverage.",
   },
   {
     year: "2020",
-    title: "The album program",
-    body: "Partnered with a small bindery in Florence to begin our hand-bound heirloom album program. Every wedding now ships with one.",
+    title: "Full-Service Expansion",
+    body: "Added videography, DJ services, photo booths, and day-of coordination. Expanded to Dallas, Austin, San Antonio, and Phoenix.",
   },
   {
-    year: "2024",
-    title: "Junebug — Best of the Best",
-    body: "Recognized among the world's best documentary wedding photographers. The honor is small; the gratitude is enormous.",
+    year: "2026",
+    title: "Award-Winning Team",
+    body: "Recognized by The Knot, WeddingWire, and Zola as Best of Weddings. Now serving 100+ couples per year across Texas and Arizona.",
   },
 ];
 
@@ -65,17 +65,17 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
-        eyebrow="About the studio"
+        eyebrow="About Us"
         title={
           <>
-            We are a small studio,
+            Family Owned,
             <br />
-            <em className="italic">made by hand</em>.
+            <em className="italic">Made with Love</em>.
           </>
         }
-        subtitle="Founded in Charleston in 2014. Photographing weddings worldwide. Quiet, editorial, and devoted to the long view."
+        subtitle="Founded by Alex & Jennifer Leon. Serving Texas and Arizona with award-winning photography, videography, DJ services, and coordination."
         image={img(PHOTOS.editorialA, 2400)}
-        alt="The studio at work"
+        alt="Alex and Jennifer Leon, founders of Weddings Unlimited"
         align="left"
       />
 
@@ -83,32 +83,22 @@ export default function AboutPage() {
       <section className="py-32 md:py-48 bg-cream">
         <div className="container-narrow">
           <Reveal>
-            <SectionLabel number="01" label="A letter from the studio" />
+            <SectionLabel number="01" label="Our Story" />
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-12 font-display text-3xl md:text-5xl font-light leading-[1.2] tracking-[-0.005em] text-ink">
-              For ten years now, we have made our living standing quietly at the
-              edge of other people's most important days — and we still find it
-              the most extraordinary thing in the world.
+              We started Weddings Unlimited because we believe no couple should have to stress about their wedding day.
             </p>
           </Reveal>
           <div className="mt-12 space-y-6 body-lg text-graphite">
             <Reveal delay={0.15}>
               <p>
-                Aurelia & Vow began as a single photographer with a single
-                medium-format camera, a small studio in downtown Charleston, and
-                the conviction that wedding photography had become — somewhere
-                along the way — too loud. Too directed. Too eager to be seen.
+                When Alex and Jennifer got married, they experienced firsthand the challenges of coordinating multiple vendors, watching the clock, and worrying about hidden fees. They knew there had to be a better way.
               </p>
             </Reveal>
             <Reveal delay={0.2}>
               <p>
-                A decade later, we are a small team of three. We photograph
-                fifteen weddings a year. We have shot in thirty-four states and
-                twelve countries. We have made galleries that have been wept
-                over, framed, and passed down. We are still, somehow, learning
-                how to do this well — and we suspect that is the only way to do
-                it well at all.
+                Today, Weddings Unlimited is a full-service wedding company serving over 100 couples per year across Texas and Arizona. We offer unlimited time coverage, transparent pricing, and a coordinated team that works together seamlessly — so you can focus on celebrating, not stressing.
               </p>
             </Reveal>
           </div>
@@ -121,34 +111,26 @@ export default function AboutPage() {
           <div className="col-span-12 md:col-span-5">
             <ImageReveal
               src={img(PHOTOS.photographer, 1200)}
-              alt="Lead photographer portrait"
+              alt="Alex and Jennifer Leon"
               aspect="portrait"
               sizes="(min-width: 768px) 40vw, 100vw"
             />
           </div>
           <div className="col-span-12 md:col-span-6 md:col-start-7">
             <Reveal delay={0.1}>
-              <p className="eyebrow mb-6">The photographer</p>
+              <p className="eyebrow mb-6">The Founders</p>
               <h2 className="display-lg max-w-[12ch]">
-                Margaux <em className="italic">Hollister</em>.
+                Alex & Jennifer <em className="italic">Leon</em>.
               </h2>
               <div className="mt-10 space-y-6 body-lg text-graphite">
                 <p>
-                  Margaux is the studio's founder and lead photographer. She was
-                  raised in a small town in Provence by a French mother and a
-                  Carolinian father, and trained as a documentary
-                  photojournalist before turning to weddings full-time in 2014.
+                  Alex and Jennifer are the husband-and-wife team behind Weddings Unlimited. After experiencing the stress of planning their own wedding, they founded the company with a simple mission: make weddings stress-free and unforgettable.
                 </p>
                 <p>
-                  She works in a quiet, observational style — equal parts Henri
-                  Cartier-Bresson and Sally Mann. Her photographs have appeared
-                  in Vogue, Brides, and Magnolia Rouge, and she is a member of
-                  the Junebug network of the world's best documentary wedding
-                  photographers.
+                  Alex brings his background in event production and DJ services, while Jennifer's expertise in photography and coordination ensures every detail is captured and executed flawlessly. Together, they've built a team of talented photographers, videographers, DJs, and coordinators who share their passion for creating magic moments.
                 </p>
                 <p>
-                  She lives in Charleston with her husband, two daughters, and
-                  a rescue greyhound named Pim.
+                  Based in Houston with teams across Texas and Arizona, they've photographed and coordinated hundreds of weddings — from intimate backyard ceremonies to grand ballroom celebrations.
                 </p>
               </div>
             </Reveal>
@@ -160,10 +142,10 @@ export default function AboutPage() {
       <section className="py-32 md:py-48 bg-ink text-cream">
         <div className="container-editorial">
           <Reveal>
-            <SectionLabel number="02" label="What we believe" tone="cream" />
+            <SectionLabel number="02" label="Our Values" tone="cream" />
             <h2 className="mt-6 display-lg max-w-[20ch] text-cream">
-              Four convictions that{" "}
-              <em className="italic">shape every wedding</em>.
+              Four promises{" "}
+              <em className="italic">we make to every couple</em>.
             </h2>
           </Reveal>
 
@@ -193,9 +175,9 @@ export default function AboutPage() {
       <section className="py-32 md:py-48 bg-cream">
         <div className="container-editorial">
           <Reveal>
-            <SectionLabel number="03" label="A short history" />
+            <SectionLabel number="03" label="Our Journey" />
             <h2 className="mt-6 display-lg max-w-[16ch]">
-              A decade,
+              Our story,
               <br /> <em className="italic">in four chapters</em>.
             </h2>
           </Reveal>
@@ -277,17 +259,17 @@ export default function AboutPage() {
       <section className="py-24 md:py-32 bg-cream">
         <div className="container-narrow text-center">
           <Reveal>
-            <p className="eyebrow mb-8">Begin a conversation</p>
+            <p className="eyebrow mb-8">Let's Create Magic Together</p>
             <h2 className="display-lg max-w-[18ch] mx-auto">
-              We would love to hear about{" "}
-              <em className="italic">your day</em>.
+              Ready to celebrate{" "}
+              <em className="italic">like you mean it</em>?
             </h2>
             <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
               <Button href="/contact" variant="filled">
-                Begin an inquiry
+                Get in Touch
               </Button>
               <Button href="/services" variant="outline">
-                See investment
+                View Packages
               </Button>
             </div>
           </Reveal>

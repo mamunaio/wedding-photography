@@ -12,9 +12,9 @@ import { cn } from "@/lib/utils";
 import { Check } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Investment — Aurelia & Vow",
+  title: "Services & Pricing — Weddings Unlimited",
   description:
-    "Three collections, made to be passed down. From half-day ceremonies to multi-day destination celebrations.",
+    "Photography, videography, DJ services, and coordination packages. Transparent pricing with unlimited time coverage. Starting at $2,495.",
 };
 
 const process = [
