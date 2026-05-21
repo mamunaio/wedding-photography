@@ -8,37 +8,37 @@ export type Testimonial = {
 export const testimonials: Testimonial[] = [
   {
     quote:
-      "We forgot they were there — and that, more than anything, is the highest compliment we could give. Our gallery is a record of the day as it actually happened, not as it was performed for the camera. We will look at these photographs for the rest of our lives.",
-    couple: "Olivia & Henry",
-    location: "Big Sur, California",
+      "We had photo, video, DJ, and Photo Booth services and all 4 of them were top tier. Our photographer and videographer were kind and outgoing which makes all the difference when you're trying to get a group of people into taking photos and having fun!",
+    couple: "Sarah & Michael",
+    location: "Houston, Texas",
+    date: "October 2025",
+  },
+  {
+    quote:
+      "Weddings Unlimited made our day absolutely perfect! The unlimited time coverage meant we never felt rushed. Our DJ kept the dance floor packed all night, and the photos are stunning. Worth every penny!",
+    couple: "Jessica & David",
+    location: "Dallas, Texas",
     date: "September 2025",
   },
   {
     quote:
-      "Choosing Aurelia & Vow was the single best decision we made about our wedding. They were calm in the chaos, present without intruding, and somehow captured photographs of moments we did not even know were happening.",
-    couple: "Sophia & James",
-    location: "Santorini, Greece",
+      "We did not have the words to describe what we wanted. They did. From the first consultation to the last dance, they understood our vision and brought it to life. The coordination was flawless!",
+    couple: "Emily & James",
+    location: "Austin, Texas",
     date: "June 2025",
   },
   {
     quote:
-      "When the gallery arrived, my mother cried. My father cried. I have never received a gift like it. It is the closest thing to a time machine I will ever own.",
-    couple: "Charlotte & Theodore",
-    location: "Hudson Valley, New York",
-    date: "October 2024",
+      "Best decision we made for our wedding! The team was professional, fun, and captured every moment beautifully. The VW Bus photo booth was a huge hit with our guests. Highly recommend!",
+    couple: "Maria & Carlos",
+    location: "San Antonio, Texas",
+    date: "April 2025",
   },
   {
     quote:
-      "We eloped, just the two of us, and we worried for months that we would not have anything tangible to show for the day. We were wrong. The album is now the most important object in our home.",
-    couple: "Isabella & Beckett",
-    location: "Aspen, Colorado",
-    date: "January 2025",
-  },
-  {
-    quote:
-      "Three days in Tuscany, sixty guests, and they made every single one of us feel seen. There is a photograph of my ninety-year-old grandfather laughing — really laughing — that I will treasure for the rest of my life.",
-    couple: "Eleanor & Atlas",
-    location: "Val d'Orcia, Tuscany",
-    date: "May 2025",
+      "From start to finish, Weddings Unlimited exceeded our expectations. No hidden fees, unlimited time, and a team that genuinely cared about making our day special. Our photos and video are absolutely breathtaking!",
+    couple: "Amanda & Ryan",
+    location: "Phoenix, Arizona",
+    date: "March 2025",
   },
 ];
