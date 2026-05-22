@@ -74,10 +74,10 @@ export default function Hero() {
             <h1 className="font-display font-light text-cream text-[clamp(3.5rem,11vw,12rem)] leading-[0.88] tracking-[-0.025em]">
               Celebrate
               <br />
-              <span className="italic font-light text-cream/95">Like You</span>
+              <span className="italic font-light text-cream/95">Every</span>
               <br />
               <span className="relative inline-block">
-                Mean It
+                Moment
                 <motion.span
                   initial={{ opacity: 0, scale: 0 }}
                   animate={{ opacity: 1, scale: 1 }}

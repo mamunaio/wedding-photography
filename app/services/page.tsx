@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
 import { Check } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Services & Pricing — Weddings Unlimited",
+  title: "Services & Pricing — Eternal Moments",
   description:
     "Photography, videography, DJ services, and coordination packages. Transparent pricing with unlimited time coverage. Starting at $2,495.",
 };

@@ -12,7 +12,7 @@ import { site } from "@/lib/data/site";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Family-owned wedding photography, videography, and DJ services. Meet Alex & Jennifer Leon, founders of Weddings Unlimited.",
+    "Family-owned wedding photography, videography, and DJ services. Meet Michael & Sarah Chen, founders of Eternal Moments.",
 };
 
 const principles = [
@@ -40,17 +40,17 @@ const principles = [
 
 const timeline = [
   {
-    year: "2015",
+    year: "2017",
     title: "The Beginning",
-    body: "Alex & Jennifer got married and experienced firsthand the stress of coordinating multiple vendors. They knew there had to be a better way.",
+    body: "Michael & Sarah got married and experienced firsthand the stress of coordinating multiple vendors. They knew there had to be a better way.",
   },
   {
-    year: "2017",
-    title: "Weddings Unlimited Founded",
+    year: "2019",
+    title: "Eternal Moments Founded",
     body: "Started with just photography services in Houston. The mission: provide stress-free, unforgettable wedding experiences with unlimited time coverage.",
   },
   {
-    year: "2020",
+    year: "2022",
     title: "Full-Service Expansion",
     body: "Added videography, DJ services, photo booths, and day-of coordination. Expanded to Dallas, Austin, San Antonio, and Phoenix.",
   },
@@ -73,9 +73,9 @@ export default function AboutPage() {
             <em className="italic">Made with Love</em>.
           </>
         }
-        subtitle="Founded by Alex & Jennifer Leon. Serving Texas and Arizona with award-winning photography, videography, DJ services, and coordination."
+        subtitle="Founded by Michael & Sarah Chen. Serving Texas and Arizona with award-winning photography, videography, DJ services, and coordination."
         image={img(PHOTOS.editorialA, 2400)}
-        alt="Alex and Jennifer Leon, founders of Weddings Unlimited"
+        alt="Michael and Sarah Chen, founders of Eternal Moments"
         align="left"
       />
 
@@ -87,18 +87,18 @@ export default function AboutPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-12 font-display text-3xl md:text-5xl font-light leading-[1.2] tracking-[-0.005em] text-ink">
-              We started Weddings Unlimited because we believe no couple should have to stress about their wedding day.
+              We started Eternal Moments because we believe no couple should have to stress about their wedding day.
             </p>
           </Reveal>
           <div className="mt-12 space-y-6 body-lg text-graphite">
             <Reveal delay={0.15}>
               <p>
-                When Alex and Jennifer got married, they experienced firsthand the challenges of coordinating multiple vendors, watching the clock, and worrying about hidden fees. They knew there had to be a better way.
+                When Michael and Sarah got married, they experienced firsthand the challenges of coordinating multiple vendors, watching the clock, and worrying about hidden fees. They knew there had to be a better way.
               </p>
             </Reveal>
             <Reveal delay={0.2}>
               <p>
-                Today, Weddings Unlimited is a full-service wedding company serving over 100 couples per year across Texas and Arizona. We offer unlimited time coverage, transparent pricing, and a coordinated team that works together seamlessly — so you can focus on celebrating, not stressing.
+                Today, Eternal Moments is a full-service wedding company serving over 100 couples per year across Texas and Arizona. We offer unlimited time coverage, transparent pricing, and a coordinated team that works together seamlessly — so you can focus on celebrating, not stressing.
               </p>
             </Reveal>
           </div>
@@ -120,14 +120,14 @@ export default function AboutPage() {
             <Reveal delay={0.1}>
               <p className="eyebrow mb-6">The Founders</p>
               <h2 className="display-lg max-w-[12ch]">
-                Alex & Jennifer <em className="italic">Leon</em>.
+                Michael & Sarah <em className="italic">Chen</em>.
               </h2>
               <div className="mt-10 space-y-6 body-lg text-graphite">
                 <p>
-                  Alex and Jennifer are the husband-and-wife team behind Weddings Unlimited. After experiencing the stress of planning their own wedding, they founded the company with a simple mission: make weddings stress-free and unforgettable.
+                  Michael and Sarah are the husband-and-wife team behind Eternal Moments. After experiencing the stress of planning their own wedding, they founded the company with a simple mission: make weddings stress-free and unforgettable.
                 </p>
                 <p>
-                  Alex brings his background in event production and DJ services, while Jennifer's expertise in photography and coordination ensures every detail is captured and executed flawlessly. Together, they've built a team of talented photographers, videographers, DJs, and coordinators who share their passion for creating magic moments.
+                  Michael brings his background in event production and DJ services, while Sarah's expertise in photography and coordination ensures every detail is captured and executed flawlessly. Together, they've built a team of talented photographers, videographers, DJs, and coordinators who share their passion for creating magic moments.
                 </p>
                 <p>
                   Based in Houston with teams across Texas and Arizona, they've photographed and coordinated hundreds of weddings — from intimate backyard ceremonies to grand ballroom celebrations.

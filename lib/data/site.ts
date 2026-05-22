@@ -1,7 +1,7 @@
 export const site = {
-  brand: "Weddings Unlimited",
-  brandShort: "Weddings Unlimited",
-  tagline: "Celebrate Like You Mean It",
+  brand: "Eternal Moments",
+  brandShort: "Eternal Moments",
+  tagline: "Celebrate Every Moment",
   description:
     "Award-winning wedding photography, videography, DJ services, photo booths, and day-of coordination. Family-owned and operated, serving Texas and Arizona with unlimited time coverage and transparent pricing.",
   location: {
@@ -17,19 +17,19 @@ export const site = {
     "Phoenix, AZ"
   ],
   available: "Serving Texas & Arizona",
-  email: "celebrations@weddingsunlimited.com",
-  phone: "(877) 374-2329",
+  email: "hello@eternalmoments.com",
+  phone: "(888) 555-0199",
   founders: {
-    names: "Alex & Jennifer Leon",
+    names: "Michael & Sarah Chen",
     title: "Founders & Lead Coordinators",
-    story: "Family-owned and operated since day one"
+    story: "Family-owned and operated since 2017"
   },
   social: {
-    instagram: "https://www.instagram.com/weddingsunlimitedusa/",
-    facebook: "https://www.facebook.com/WeddingsUnlimitedUSA/",
-    pinterest: "https://www.pinterest.com/weddingsunlimited/",
-    tiktok: "https://www.tiktok.com/@weddingsunlimitedusa",
-    youtube: "https://www.youtube.com/@weddingsunlimitedusa",
+    instagram: "https://www.instagram.com/eternalmoments/",
+    facebook: "https://www.facebook.com/EternalMomentsWeddings/",
+    pinterest: "https://www.pinterest.com/eternalmoments/",
+    tiktok: "https://www.tiktok.com/@eternalmoments",
+    youtube: "https://www.youtube.com/@eternalmoments",
   },
   press: [
     "The Knot",

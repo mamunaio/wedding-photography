@@ -73,8 +73,8 @@ export default function Navigation() {
               shouldUseDarkNavbar ? "text-cream" : "text-ink",
             )}
           >
-            <span className="font-semibold">Weddings</span>
-            <span className="mx-1.5 text-pink">Unlimited</span>
+            <span className="font-semibold">Eternal</span>
+            <span className="mx-1.5 text-pink">Moments</span>
           </Link>
 
           <nav className="hidden lg:flex items-center gap-10">
