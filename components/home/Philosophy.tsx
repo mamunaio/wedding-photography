@@ -21,12 +21,12 @@ export default function Philosophy() {
             <Reveal>
               <div className="relative">
                 {/* Decorative quote mark */}
-                <div className="absolute -left-4 md:-left-8 -top-2 text-pink/20 font-display text-[8rem] leading-none pointer-events-none select-none">
+                <div className="absolute -left-4 md:-left-8 -top-6 text-ink/[0.03] font-display text-[10rem] md:text-[14rem] leading-none pointer-events-none select-none">
                   "
                 </div>
-                <h2 className="display-lg max-w-[18ch] relative">
+                <h2 className="display-lg max-w-[18ch] relative tracking-[-0.02em]">
                   We are quiet observers of an{" "}
-                  <em className="italic font-light text-ink/90">unrepeatable day</em>
+                  <em className="italic font-light text-ink/80">unrepeatable day</em>
                   <span className="text-pink">.</span>
                 </h2>
               </div>
@@ -37,7 +37,7 @@ export default function Philosophy() {
             <Reveal delay={0.15}>
               <div className="relative">
                 {/* Decorative line */}
-                <div className="absolute -left-6 top-0 bottom-0 w-px bg-gradient-to-b from-brass/40 via-brass/20 to-transparent hidden md:block" />
+                <div className="absolute -left-6 top-0 bottom-0 w-px bg-gradient-to-b from-ink/20 via-ink/5 to-transparent hidden md:block" />
                 
                 <div className="space-y-6 body-lg text-ink/80">
                   <p className="leading-relaxed">
