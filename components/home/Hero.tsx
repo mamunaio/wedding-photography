@@ -71,18 +71,18 @@ export default function Hero() {
               className="h-px bg-pink mb-8 md:mb-12"
             />
             
-            <h1 className="font-display font-light text-cream text-[clamp(3.5rem,11vw,12rem)] leading-[0.88] tracking-[-0.025em]">
+            <h1 className="font-display font-light text-cream text-[clamp(4rem,12vw,12.5rem)] leading-[0.85] tracking-[-0.02em] drop-shadow-md">
               Celebrate
               <br />
-              <span className="italic font-light text-cream/95">Every</span>
+              <span className="italic font-light text-cream/95 ml-4 md:ml-16">Every</span>
               <br />
               <span className="relative inline-block">
                 Moment
                 <motion.span
                   initial={{ opacity: 0, scale: 0 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.6, delay: 1.8, ease: [0.22, 1, 0.36, 1] }}
-                  className="text-pink"
+                  transition={{ duration: 0.8, delay: 1.8, ease: [0.22, 1, 0.36, 1] }}
+                  className="text-pink ml-2"
                 >
                   .
                 </motion.span>
@@ -94,7 +94,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 1.6, ease: [0.22, 1, 0.36, 1] }}
-              className="mt-8 md:mt-12 font-body text-[1.0625rem] md:text-xl text-cream/90 leading-[1.8] max-w-2xl"
+              className="mt-8 md:mt-12 font-body text-[1.125rem] md:text-xl text-cream/90 leading-[1.8] max-w-2xl drop-shadow-sm"
             >
               Award-winning photography, videography, DJ services & coordination — with unlimited time coverage.
             </motion.p>

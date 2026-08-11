@@ -21,10 +21,10 @@ export default function FeaturedWork() {
           <Reveal delay={0.1}>
             <Link
               href="/portfolio"
-              className="inline-flex items-center gap-2 font-italiana text-[0.8125rem] uppercase tracking-[0.35em] text-graphite hover:text-ink transition-colors duration-500 border-b border-ink/20 pb-2"
+              className="inline-flex items-center gap-2 font-italiana text-[0.8125rem] uppercase tracking-[0.4em] text-graphite hover:text-ink transition-colors duration-500 border-b border-ink/10 hover:border-ink/30 pb-2"
             >
               View full portfolio
-              <span>→</span>
+              <span className="transition-transform duration-500 group-hover:translate-x-1">→</span>
             </Link>
           </Reveal>
         </div>
@@ -65,11 +65,11 @@ export default function FeaturedWork() {
                   )}
                 >
                   <Reveal delay={0.1}>
-                    <p className="eyebrow mb-4">
+                    <p className="eyebrow mb-4 opacity-80">
                       {String(i + 1).padStart(2, "0")} ·{" "}
                       {entry.category}
                     </p>
-                    <h3 className="font-display text-3xl md:text-5xl font-light leading-[1.05] tracking-[-0.01em]">
+                    <h3 className="font-display text-4xl md:text-5xl lg:text-6xl font-light leading-[1] tracking-[-0.015em]">
                       <Link
                         href={`/portfolio/${entry.slug}`}
                         className="link-underline"
@@ -77,16 +77,16 @@ export default function FeaturedWork() {
                         {entry.couple}
                       </Link>
                     </h3>
-                    <p className="mt-3 font-italiana text-sm tracking-[0.2em] uppercase text-purple">
+                    <p className="mt-4 font-italiana text-[0.8125rem] tracking-[0.25em] uppercase text-purple/80">
                       {entry.location}
                     </p>
-                    <p className="mt-6 body-md max-w-md">{entry.excerpt}</p>
+                    <p className="mt-6 body-md max-w-md opacity-90 leading-relaxed">{entry.excerpt}</p>
                     <Link
                       href={`/portfolio/${entry.slug}`}
-                      className="mt-6 inline-flex items-center gap-2 font-italiana text-[0.75rem] uppercase tracking-[0.3em] text-graphite hover:text-ink transition-colors duration-500"
+                      className="group mt-8 inline-flex items-center gap-2 font-italiana text-[0.75rem] uppercase tracking-[0.35em] text-graphite hover:text-ink transition-colors duration-500"
                     >
                       Read the story
-                      <span>→</span>
+                      <span className="transition-transform duration-500 group-hover:translate-x-1">→</span>
                     </Link>
                   </Reveal>
                 </div>
