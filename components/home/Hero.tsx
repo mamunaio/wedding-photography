@@ -55,7 +55,7 @@ export default function Hero() {
       </motion.div>
 
       {/* Center display with enhanced typography */}
-      <div className="absolute inset-0 flex items-center justify-center">
+      <div className="absolute inset-0 flex items-center justify-center pb-16 md:pb-24">
         <div className="container-editorial">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -71,10 +71,10 @@ export default function Hero() {
               className="h-px bg-pink mb-8 md:mb-12"
             />
             
-            <h1 className="font-display font-light text-cream text-[clamp(4rem,12vw,12.5rem)] leading-[0.85] tracking-[-0.02em] drop-shadow-md">
+            <h1 className="font-display font-light text-cream text-[clamp(2.75rem,8vw,9rem)] leading-[0.9] tracking-[-0.02em] drop-shadow-md">
               Celebrate
               <br />
-              <span className="italic font-light text-cream/95 ml-4 md:ml-16">Every</span>
+              <span className="italic font-light text-cream/95 ml-2 md:ml-8">Every</span>
               <br />
               <span className="relative inline-block">
                 Moment
@@ -82,7 +82,7 @@ export default function Hero() {
                   initial={{ opacity: 0, scale: 0 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.8, delay: 1.8, ease: [0.22, 1, 0.36, 1] }}
-                  className="text-pink ml-2"
+                  className="text-pink ml-1"
                 >
                   .
                 </motion.span>
@@ -94,7 +94,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 1.6, ease: [0.22, 1, 0.36, 1] }}
-              className="mt-8 md:mt-12 font-body text-[1.125rem] md:text-xl text-cream/90 leading-[1.8] max-w-2xl drop-shadow-sm"
+              className="mt-4 md:mt-6 font-body text-[0.9375rem] md:text-lg text-cream/90 leading-[1.6] max-w-xl drop-shadow-sm"
             >
               Award-winning photography, videography, DJ services & coordination — with unlimited time coverage.
             </motion.p>
